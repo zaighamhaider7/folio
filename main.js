@@ -66,7 +66,8 @@ gsap.from(".hero-img-div img",{
 
 
 gsap.from(".about-para",{
-    x:-1000,
+    // x:-1000,
+    scale:0,
     opacity:0,
     duration:1,
     delay:0.5,
@@ -74,12 +75,13 @@ gsap.from(".about-para",{
         trigger:".about-para",
         scroller:"body",
         start:"top 150%",
-        end:"top 10%",
+        end:"top 30%",
         scrub:2
     }
 })
 gsap.from(".about-img img",{
-    x:1000,
+    // x:1000,
+    scale:0,
     opacity:0,
     duration:1,
     delay:0.5,
@@ -87,7 +89,7 @@ gsap.from(".about-img img",{
         trigger:".about-img img",
         scroller:"body",
         start:"top 150%",
-        end:"top 10%",
+        end:"top 30%",
         scrub:2,
     }
 })
@@ -98,7 +100,7 @@ gsap.to(".project-outer .projects",{
      trigger: "#project-sec",
      scroller:"body",
      start:"top 0%",
-     end:"top -200%",
+     end:"top -300%",
      scrub:2,
      pin:true
     }
