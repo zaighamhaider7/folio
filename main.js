@@ -76,7 +76,7 @@ gsap.from("#icons .social",{
 })
 
 
-
+// about section animation 
 
 gsap.from(".about-detail",{
     // x:-1000,
@@ -106,6 +106,65 @@ gsap.from(".about-img-div img",{
         scrub:2,
     }
 })
+
+// cursor follower
+
+let body = document.getElementById("body");
+let cursor = document.getElementById("cursor");
+let about = document.getElementById("about");
+
+
+body.addEventListener("mousemove",function(cur){
+    gsap.to(cursor,{
+        x:cur.x,
+        y:cur.y
+    })
+})
+
+about.addEventListener("mousemove",function(cur){
+    cursor.innerHTML="About"
+    gsap.to(cursor,{
+       scale:3
+    })
+})
+
+about.addEventListener("mouseleave",function(cur){
+    cursor.innerHTML=""
+    gsap.to(cursor,{
+       scale:1
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 gsap.to(".project-outer .projects",{
     transform:"translateX(-440%)",

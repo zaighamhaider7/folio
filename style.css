@@ -364,7 +364,7 @@ li {
   position: fixed;
   bottom: 2%;
   left: 1%;
-  z-index: 999;
+  z-index: 9999;
 }
 
 
@@ -432,3 +432,30 @@ background-color: aqua;
     justify-content: center;
     align-items: center;
   } */
+
+
+
+
+
+
+
+
+
+#cursor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  /* background-color: #ffbd39; */
+  border: 2px dashed #ffbd39;
+  border-radius: 45px;
+  z-index: 9999;
+  position: fixed;
+  top: 0%;
+  font-size: 7px;
+  font-weight: bold;
+  color: #fff;
+}
+
