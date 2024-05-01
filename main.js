@@ -1,92 +1,105 @@
-let nav = gsap.timeline()
-nav.from("nav h2",{
-    y:-30,
-    opacity:0,
-    duration:1,
-    delay:0.2,
-})
-nav.from("ul li",{
-    y:-30,
-    opacity:0,
-    duration:1,
-    stagger:0.3
-})
-let desc = gsap.timeline()
-desc.from("#first",{
-    x:1000,
-    opacity:0,
-    duration:1,
-    delay:0.2,
-})
-desc.from("#second",{
-    x:1000,
-    opacity:0,
-    duration:1.5,
-    // delay:1,
-})
-desc.from("#third",{
-    x:1000,
-    opacity:0,
-    duration:1.5,
-    // delay:1.5,
-})
-desc.from("#icons img",{
-    x:-30,
-    opacity:0,
-    duration:1,
-    stagger:0.5
-})
+// webnav animation
 
-gsap.from(".hero-detail h1",{
+let webnav = gsap.timeline()
+webnav.from(".webnav h2",{
+    y:-30,
+    opacity:0,
+    duration:1,
+    delay:0.2,
+})
+webnav.from(".webnav ul a",{
+    y:-30,
+    opacity:0,
+    duration:1,
+    stagger:0.1
+})
+gsap.from(".webnav .menu",{
+    y:-30,
+    opacity:0,
+    duration:1,
+    delay:0.2,
+})
+// responsive nav  animation
+document.getElementById("humburger").addEventListener("click", function () {
+    gsap.from(".respnav h2",{
+        y:-30,
+        opacity:0,
+        duration:1,
+        delay:0.2,
+    })
+
+    gsap.from(".respnav .cross",{
+        y:-30,
+        opacity:0,
+        duration:1,
+        delay:0.2,
+    })
+
+    gsap.from(".respnav ul a",{
+        x:-30,
+        opacity:0,
+        duration:1,
+        stagger:0.2
+    })
+});
+
+// hero-section animation
+
+gsap.from(".hero-detail h2",{
     x:-1000,
     opacity:0,
     duration:1,
-    delay:0.5,
-    scrollTrigger:{
-        trigger:".hero-detail h1",
-        scroller:"body",
-        start:"top 150%",
-        end:"top 10%",
-        scrub:2
-    }
+    delay:0.2,
+    stagger:0.2
+})
+gsap.from(" .hero-btn",{
+    x:-1000,
+    opacity:0,
+    duration:1,
+    delay:0.8
 })
 gsap.from(".hero-img-div img",{
     x:1000,
     opacity:0,
     duration:1,
     delay:0.5,
-    scrollTrigger:{
-        trigger:".hero-img-div img",
-        scroller:"body",
-        start:"top 150%",
-        end:"top 10%",
-        scrub:2
-    }
+})
+
+// icons animation
+
+
+gsap.from("#icons .social",{
+    y:50,
+    opacity:0,
+    duration:1,
+    stagger:0.5
 })
 
 
-gsap.from(".about-para",{
+
+
+gsap.from(".about-detail",{
     // x:-1000,
     scale:0,
     opacity:0,
     duration:1,
     delay:0.5,
     scrollTrigger:{
-        trigger:".about-para",
+        trigger:".about-detail",
         scroller:"body",
         start:"top 150%",
         end:"top 30%",
         scrub:2
     }
 })
-gsap.from(".about-img img",{
+gsap.from(".about-img-div img",{
     // x:1000,
     scale:0,
     opacity:0,
     duration:1,
     delay:0.5,
     scrollTrigger:{
-        trigger:".about-img img",
+        trigger:".about-img-div img",
         scroller:"body",
         start:"top 150%",
         end:"top 30%",

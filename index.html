@@ -1,87 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-
-   <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- j-query -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- BS CSS -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- BS JS -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
-<section>
-    <nav>
-        <h2>
-            ALPHA
-        </h2>
-        <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>SERVICES</li>
-            <li>CONTACT</li>
+
+<body  data-bs-theme="dark">
+    <!-- webnav start -->
+
+    <header>
+        <nav class=" webnav">
+            <a href="#">
+                <h2>
+                    ALPHA
+                </h2>
+            </a>
+            <img src="./hamburger menu.png" height="30em" width="30em" class="menu" id="humburger">
+            <ul class="webnavul">
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Services</li>
+                </a>
+                <a href="#">
+                    <li>Projects</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- responsive nav start -->
+
+    <nav class="respnav">
+        <div class="resp-head">
+            <a href="#">
+                <h2>
+                    ALPHA
+                </h2>
+            </a>
+            <img src="./cross bar.png" height="40em" width="40em" class="cross">
+        </div>
+        <ul class="respul" data-aos="fade-up" data-aos-duration="3000">
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>About Us</li>
+            </a>
+            <a href="#">
+                <li>Services</li>
+            </a>
+            <a href="#">
+                <li>Packages</li>
+            </a>
+            <a href="#">
+                <li>Contact Us</li>
+            </a>
         </ul>
     </nav>
 
-<div id="hero">
-    <h1 id="first">
-        hello
-    </h1>
-    <h1 id="second">
-        i'm zaigham haider
-    </h1>
-    <h1 id="third">
-       Web Designer
-    </h1>
-</div>
-<div id="icons">
-    <img src="./icons8-instagram-96.png" height="50px" width="auto" id="insta" >
-    <img src="./icons8-tiktok-96.png" height="45px" width="auto" id="tiktok" >
-    <img src="./icons8-linkedin-96.png" height="50px" width="auto" id="linkdin" >
-</div>
-</section>
+    <!-- hero section start-->
 
-
-<div class="hero-description">
-    <div class="hero-detail">
-        <h1>
-            Hi, My name is <span style="color: #ffbd39;">Zaigham</span> and i am a passionate
-            <span style="color: #ffbd39;" id="element">Web Desginer.</span>
-        </h1>
-    </div>
-    
-    <div class="hero-img-div">
-        <img src="./—Pngtree—web developer isometric illustration_6067558.png" alt="developer-png" class="hero-img">
-    </div>
- </div>
-
-
-
- <section id="aboutme">
-    <div class="container text-center about-outer">
-        <div class="row gap-5">
-          <div class="col col-lg-6 col-md-4">
-           
- <div class="about-para">
-    <h2>
-        HEMLOOO JEEE
-    </h2>
-    <h5>
-        Hi there! I'm [Your Name], a passionate web designer dedicated to crafting beautiful and functional digital experiences. With [X] years of experience in the field, I blend creativity with technical expertise to bring ideas to life on the web. From sleek, responsive layouts to intuitive user interfaces, I thrive on turning visions into reality. Let's collaborate and create something amazing together!
-    </h5>
-</div>
-          </div>
-          <div class="col">
-           <div class="about-img">
-            <img src="./gif.gif" alt="" height="300px" width="auto">
-           </div>
-          </div>
-          
+    <div class="hero-description">
+        <div class="hero-detail">
+            <h2>
+                Hi,
+            </h2>
+            <h2>
+                I'm <span style="color: #ffbd39;">Zaigham</span>
+            </h2>
+            <h2>
+                Web Designer
+            </h2>
+            <button class="hero-btn">
+                Get in touch
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+                <span class="fourth"></span>
+            </button>
         </div>
-      </div>
- </section>
 
-<div id="project-sec">
+        <div class="hero-img-div">
+            <img src="./—Pngtree—web developer isometric illustration_6067558.png" alt="developer-png" class="hero-img">
+        </div>
+    </div>
+
+
+<div id="icons">
+    <i class="fa-brands fa-instagram social" style="font-size: 2rem; color: #fff;"></i>
+    <i class="fa-brands fa-tiktok social" style="font-size: 2rem; color: #fff;"></i>
+    <i class="fa-brands fa-linkedin social"  style="font-size: 2rem; color: #fff;"></i>
+
+
+    <!-- <img src="./icons8-instagram-96.png" height="50px" width="auto" class="social" > -->
+    <!-- <img src="./icons8-tiktok-96.png" height="45px" width="auto" id="tiktok" > -->
+    <!-- <img src="./icons8-linkedin-96.png" height="50px" width="auto" class="social" > -->
+</div> 
+
+
+
+
+<div class="about-outer">
+    <div class="about-detail">
+        <h2>
+            Hi,
+        </h2>
+        <h2>
+            I'm <span style="color: #ffbd39;">Zaigham</span>
+        </h2>
+        <h2>
+            Web Designer
+        </h2>
+    </div>
+
+    <div class="about-img-div">
+        <img src="./gif.gif" alt="developer-png" class="about-img">
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- <div id="project-sec">
     <div class="project-outer">
         <div class="projects">1</div>
         <div class="projects">2</div>
@@ -90,13 +151,50 @@
         <div class="projects">5</div>
         <div class="projects">6</div>
     </div>
-</div>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ad, ratione a delectus voluptate distinctio ipsam facere adipisci, ipsum illo aspernatur numquam assumenda voluptatum accusantium perspiciatis eos commodi error reiciendis explicabo accusamus. Tempora quasi sapiente magni voluptas adipisci. Quisquam minus modi odit maiores tempore facere ab aspernatur? Adipisci nisi sunt fugiat, reiciendis, officiis exercitationem molestias voluptatem esse repellat quo quia consectetur illum iure! Facere magnam alias repellendus harum unde dicta reiciendis reprehenderit quasi neque ullam? Molestiae numquam distinctio ullam consectetur hic iusto minus minima voluptatum aut aperiam nulla sapiente eos commodi sint necessitatibus tempora quisquam alias dignissimos, nesciunt, deserunt sed rerum. Atque possimus cumque officiis sunt explicabo nemo quidem placeat odio accusantium, quibusdam incidunt ducimus tempora consequatur inventore rerum fuga architecto, dolorem temporibus itaque? Nisi ea molestiae eum nostrum! Optio temporibus maxime sapiente obcaecati architecto itaque autem quidem placeat? Amet atque quasi voluptatem quod, vero aperiam mollitia. Sit maiores aut quae tenetur iusto autem dignissimos a molestiae repellat amet architecto quia sequi sint aperiam consectetur rem, corrupti doloribus rerum. Neque repudiandae placeat impedit mollitia eos. Vel nulla nostrum architecto saepe harum enim iure, facilis aperiam sunt molestias modi delectus, autem assumenda ipsa. Quo placeat quam maxime, porro eveniet qui est eum odio saepe eos aliquid quasi corrupti molestiae nobis quidem illo enim! Id nemo inventore atque veritatis est tempore commodi velit, natus harum iste dolorem consectetur eius quisquam amet deleniti corporis ipsam sequi ab neque incidunt adipisci! Tempore asperiores amet velit nesciunt error est minima expedita animi dolores veniam, quos aliquam ea quidem ullam magni corporis. Nostrum alias, officiis quisquam aperiam id minus incidunt necessitatibus dolore sapiente tempore accusantium, ea, consequatur iure tenetur cumque iusto qui maiores ex deserunt! Nihil doloremque magni cum sequi ea iure, est velit quo aspernatur laudantium deleniti nulla architecto culpa ad praesentium excepturi adipisci. Minus incidunt molestias obcaecati magni a, consequatur rem dignissimos adipisci aliquid necessitatibus atque numquam sequi earum ab natus eaque quasi inventore ratione voluptatibus eos quia eligendi consequuntur sapiente tenetur? Delectus ex expedita sapiente autem voluptatum optio qui nihil modi dolorum illo a cumque aperiam repudiandae maiores mollitia ea harum consequatur perspiciatis eveniet eius voluptas deserunt, dolore velit. Sapiente quis velit laboriosam excepturi adipisci animi fugit accusantium molestiae nihil nesciunt alias quam perferendis doloribus maiores illum, odio aut facere distinctio ipsa enim fugiat nulla nisi blanditiis optio. Similique repellat voluptatum, inventore odio doloribus eaque! Vitae est fugit eum eius vel dolorum doloribus, provident voluptas quas quis dignissimos consequatur quam iste iure fuga quia. Amet, architecto officia minima quae itaque obcaecati nulla esse rem aliquid quaerat eligendi similique laudantium, maxime quibusdam ipsam, quam illum. Eveniet labore est quod recusandae quos animi necessitatibus aliquam ea quae voluptas itaque, corrupti iste quaerat. Iste tempore nostrum eligendi ut accusamus! Doloremque, consequatur impedit eos, voluptas provident aliquid odit iure similique, dolorem eaque autem velit possimus voluptatem earum accusamus? Error, facere. Voluptatibus quis molestias accusamus, pariatur consectetur nihil, vitae quisquam laborum, corporis deserunt itaque molestiae. Laboriosam sunt, ipsam velit ullam, quis sit quidem iure ipsum placeat fugit eos!
+</div> -->
 
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="main.js"></script>
+
+    <!-- navbar jquery start -->
+    <script>
+        $(document).ready(
+            function () {
+                $('.menu').click(
+                    function () {
+                        $('.respnav').animate(
+                            {
+                                "right": "0%",
+
+                            }
+                        );
+                        $('.respnav').animate(
+                            {
+                                "right": "0%",
+
+                            }
+                        );
+                    }
+                );
+                $(".cross").click(
+                    function () {
+                        $('.respnav').animate(
+                            {
+                                "right": "-100%",
+
+                            }
+                        )
+
+                    }
+                )
+            }
+        )
+    </script>
 </body>
+
 </html>
