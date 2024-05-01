@@ -277,6 +277,7 @@ li {
   cursor: default;
   box-sizing: border-box;
   /* padding: 0% 4.5%; */
+  position: relative;
 }
 .about-detail h2{
   font-size: 3.5rem;
@@ -294,6 +295,7 @@ li {
     height: 80vh;
     width: 100%;
     cursor: default;
+    position: relative;
   }
   /* .about-detail{
     width: 30em;
@@ -317,6 +319,7 @@ li {
     height: 90vh;
     width: 100%;
     cursor: default;
+    position: relative;
   }
   .about-detail{
     text-align: center;
@@ -451,11 +454,17 @@ background-color: aqua;
   /* background-color: #ffbd39; */
   border: 2px dashed #ffbd39;
   border-radius: 45px;
-  z-index: 9999;
+  z-index: 9;
   position: fixed;
   top: 0%;
   font-size: 7px;
   font-weight: bold;
   color: #fff;
 }
-
+.overlay{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+}
