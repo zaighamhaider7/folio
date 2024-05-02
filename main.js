@@ -107,11 +107,63 @@ gsap.from(".about-img-div img",{
     }
 })
 
-// cursor follower
+
+// about section animation 
+
+
+// gsap.from(".about-detail",{
+//     // x:-1000,
+//     scale:0,
+//     opacity:0,
+//     duration:1,
+//     delay:0.5,
+//     scrollTrigger:{
+//         trigger:".about-detail",
+//         scroller:"body",
+//         start:"top 150%",
+//         end:"top 30%",
+//         scrub:2
+//     }
+// })
+gsap.from(".services-outer .row .col",{
+    // x:1000,
+    // y:500,
+    scale:0,
+    opacity:0,
+    duration:1,
+    delay:0.3,
+    stagger:0.2,
+    scrollTrigger:{
+        trigger:".services-outer .row .col",
+        scroller:"body",
+        start:"top 150%",
+        end:"top 30%",
+        scrub:2,
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// cursor mover
 
 let body = document.getElementById("body");
 let cursor = document.getElementById("cursor");
 let about = document.getElementById("about");
+let service = document.getElementById("services");
 
 
 body.addEventListener("mousemove",function(cur){
@@ -120,6 +172,8 @@ body.addEventListener("mousemove",function(cur){
         y:cur.y
     })
 })
+
+// about section cursor
 
 about.addEventListener("mousemove",function(cur){
     cursor.innerHTML="About"
@@ -135,8 +189,21 @@ about.addEventListener("mouseleave",function(cur){
     })
 })
 
+// service section cursor
 
+service.addEventListener("mousemove",function(cur){
+    cursor.innerHTML="services"
+    gsap.to(cursor,{
+       scale:3
+    })
+})
 
+service.addEventListener("mouseleave",function(cur){
+    cursor.innerHTML=""
+    gsap.to(cursor,{
+       scale:1
+    })
+})
 
 
 
