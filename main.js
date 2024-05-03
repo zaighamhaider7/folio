@@ -108,23 +108,8 @@ gsap.from(".about-img-div img",{
 })
 
 
-// about section animation 
+// services section animation 
 
-
-// gsap.from(".about-detail",{
-//     // x:-1000,
-//     scale:0,
-//     opacity:0,
-//     duration:1,
-//     delay:0.5,
-//     scrollTrigger:{
-//         trigger:".about-detail",
-//         scroller:"body",
-//         start:"top 150%",
-//         end:"top 30%",
-//         scrub:2
-//     }
-// })
 gsap.from(".services-outer .row .col",{
     // x:1000,
     // y:500,
@@ -135,6 +120,27 @@ gsap.from(".services-outer .row .col",{
     stagger:0.2,
     scrollTrigger:{
         trigger:".services-outer .row .col",
+        scroller:"body",
+        start:"top 150%",
+        end:"top 30%",
+        scrub:2,
+    }
+})
+
+
+
+// skills section animation 
+
+gsap.from(".skill-outer .skills",{
+    // x:-1000,
+    // y:500,
+    scale:0,
+    opacity:0,
+    duration:1,
+    delay:1,
+    // stagger:0.5,
+    scrollTrigger:{
+        trigger:".skill-outer .skills progress",
         scroller:"body",
         start:"top 150%",
         end:"top 30%",
@@ -164,6 +170,7 @@ let body = document.getElementById("body");
 let cursor = document.getElementById("cursor");
 let about = document.getElementById("about");
 let service = document.getElementById("services");
+let skill = document.getElementById("skills");
 
 
 body.addEventListener("mousemove",function(cur){
@@ -199,6 +206,22 @@ service.addEventListener("mousemove",function(cur){
 })
 
 service.addEventListener("mouseleave",function(cur){
+    cursor.innerHTML=""
+    gsap.to(cursor,{
+       scale:1
+    })
+})
+
+// skills section cursor
+
+skill.addEventListener("mousemove",function(cur){
+    cursor.innerHTML="Skills"
+    gsap.to(cursor,{
+       scale:3
+    })
+})
+
+skill.addEventListener("mouseleave",function(cur){
     cursor.innerHTML=""
     gsap.to(cursor,{
        scale:1

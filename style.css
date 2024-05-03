@@ -338,7 +338,7 @@ li {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     cursor: default;
     position: relative;
@@ -387,7 +387,7 @@ li {
       justify-content: center;
     }
   .service-cards{
-      width: 22rem !important;
+      width: 25rem !important;
       height: fit-content !important;
       transition: 0.6s !important;
       color: #ffffff !important;
@@ -396,27 +396,103 @@ li {
   .service-cards:hover{
     background-color: #ffbd39 !important;
   }
+  .service-cards p{
+    font-weight: 400 !important;
+}
+@media (max-width:780px){
+  .services-outer{
+    margin-top: 4em;
+  }
+}
   @media(max-width:480px){
-    .services-outer{
-      height:100%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
       .service-cards{
-          width: 16rem !important;
+          width: 17rem !important;
           height: 23rem !important;
           margin: 0% auto;
           z-index: 9;
   }
   }
-  .service-cards p{
-      font-weight: 400 !important;
+@media(max-width:1000px){
+  .services-outer{
+    height:fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
+}
 
 
+ /* skills section start */
+
+ 
+.skill-outer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.skill-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 1.5%;
+  margin-bottom: 0%;
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+progress{
+  width: 32em;
+  height: 15px;
+  border-radius: 10px;
+}
+progress::-webkit-progress-bar {
+  background-color:#ffffff;
+  border-radius: 10px;
+}
+progress::-webkit-progress-value {
+  background-color:#ffbd39;
+  border-radius: 10px;
+  transition: width 0.4s ease-in;
+}
+@media(max-width:1200px){
+  progress{
+    width: 30em;
+    height: 15px;
+    border-radius: 10px;
+  }
+}
+@media(max-width:1050px){
+  progress{
+    width: 20em;
+    height: 15px;
+    border-radius: 10px;
+  }
+}
+@media(max-width:760px){
+  .skill-outer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    position: relative;
+  }
+  progress{
+    width: 16em;
+    height: 15px;
+    border-radius: 10px;
+  }
+}
 
 
 
