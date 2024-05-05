@@ -256,15 +256,15 @@ skill.addEventListener("mouseleave",function(cur){
 
 
 
-gsap.to(".project-outer .projects",{
-    transform:"translateX(-440%)",
-    scrollTrigger:{
-     trigger: "#project-sec",
-     scroller:"body",
-     start:"top 0%",
-     end:"top -300%",
-     scrub:2,
-     pin:true
-    }
+// gsap.to(".project-outer .projects",{
+//     transform:"translateX(-440%)",
+//     scrollTrigger:{
+//      trigger: "#project-sec",
+//      scroller:"body",
+//      start:"top 0%",
+//      end:"top -300%",
+//      scrub:2,
+//      pin:true
+//     }
    
-})
+// })
