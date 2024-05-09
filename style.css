@@ -122,7 +122,7 @@ li {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   cursor: default;
   box-sizing: border-box;
@@ -410,12 +410,12 @@ li {
     text-align: center;
     font-size: 2.4rem;
     color: #ffffff;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     font-weight: bold;
   }
   .service-overlay{
     position: absolute;
-      top: 73%;
+      top: 30%;
       left: -10%;
       font-size: 3.8rem;
       letter-spacing: 4px;
@@ -430,7 +430,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
   }
     .col{
       display: flex;
@@ -443,17 +442,27 @@ li {
     }
   .service-cards{
       width: 25rem !important;
-      height: fit-content !important;
+      height: 10em !important;
       transition: 0.6s !important;
       color: #ffffff !important;
       z-index: 9;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
   .service-cards:hover{
     background-color: #ffbd39 !important;
+    cursor: help;
   }
-  .service-cards p{
-    font-weight: 400 !important;
+  .service-cards h3{
+    font-weight: 500 !important;
+    transition: 0.3s ease !important;
+    letter-spacing: 2px !important;
+    text-align: center !important;
 }
+  .service-cards:hover h3{
+    transform: scale(1.1) !important;
+  }
 @media (max-width:780px){
   .services-outer{
     margin-top: 4em;
@@ -462,7 +471,7 @@ li {
   @media(max-width:480px){
       .service-cards{
           width: 17rem !important;
-          height: 23rem !important;
+          height: 10rem !important;
           margin: 0% auto;
           z-index: 9;
   }
@@ -507,11 +516,11 @@ li {
   font-size: 2.6rem;
   color: #ffffff;
   font-weight: bold;
-  margin-top: 2em;
+  /* margin-top: 2em; */
 }
 .skill-overlay{
   position: absolute;
-  top: 68%;
+  top: 20%;
   left: -20%;
   font-size: 5.5rem;
   letter-spacing: 4px;
@@ -599,46 +608,136 @@ progress::-webkit-progress-value {
 
 /* project section start */
 
-#project{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5em;
-}
-#project h2{
-  text-align: center;
+.skill-heading h2 {
   font-size: 2.5rem;
   color: #ffffff;
-  margin-top: 2em;
   font-weight: bold;
 }
-.project-overlay{
-  position: absolute;
-    top: 73%;
-    left: -5%;
-    font-size: 3.8rem;
-    letter-spacing: 4px;
-    z-index: -99;
-    color: #9999992c;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.project-heading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.project-overlay {
+  position: absolute;
+  top: 30%;
+  font-size: 3.8rem;
+  letter-spacing: 4px;
+  z-index: -99;
+  color: #9999992c;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.project-outer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+}
+.project-content{
+  height: fit-content;
+  width: 25em;
+  padding: 0% 2%;
+  color: #ffffff;
+}
+.project-content button {
+  height: 2em;
+  width: 8em;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+.project-img{
+  height: 18em;
+  width: 28em;
+  border-radius: 16px;
+  transition: 0.6s ease-in;
+  transform: skewX(10deg);
+}
+.project-img:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 40px 0px #ffffff62;
+}
+#first-img{
+  background-image: url(./assets/fastfoodresturant.png);
+  background-position: center;
+  background-size: cover;
+}
+#second-img{
+  background-image: url(./assets/sports\ info.png);
+  background-position: center;
+  background-size: cover;
+  transform: skewX(-10deg);
+}
+#second-img:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 40px 0px #ffffff62;
+}
+#third-img{
+  background-image: url(./assets/sports\ info.png);
+  background-position: center;
+  background-size: cover;
+}
+@media(max-width:960px){
+  .project-outer {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    margin-top: 5em;
+  }
+ #second-project{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+  }
+  .project-img {
+    height: 12em;
+    width: 20em;
+    transition: 0.9s ease;
+  }
+  .project-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 40px 0px #ffffff62;
+  }
+  #second-img:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 40px 0px #ffffff62;
+    }
+  .project-content {
+    width: 20em;
+    text-align: center;
+  }
+}
+@media(max-width:400px){
+  .project-img {
+    height: 12em;
+    width: 16em;
+    position: relative;
+    border-radius: 16px;
+    transform: skewX(10deg);
+    transition: 0.9s ease;
+    background-image: url(./fastfoodresturant.png);
+    background-size: cover;
+  }
+  .project-content {
+      width: 18em;
+      text-align: center;
+    }
+}
 
 
 
@@ -666,10 +765,10 @@ progress::-webkit-progress-value {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 30px;
-  width: 30px;
-  /* background-color: #ffbd39; */
-  border: 2px dashed #ffbd39;
+  height: 50px;
+  width: 50px;
+  background-color: #ffbd39;
+  /* border: 2px dashed #ffbd39; */
   border-radius: 45px;
   z-index: 9;
   position: fixed;
@@ -677,11 +776,12 @@ progress::-webkit-progress-value {
   font-size: 6.5px;
   font-weight: 500;
   color: #fff;
+  mix-blend-mode: difference;
 }
-.overlay{
+/* .overlay{
   height: 100%;
   width: 100%;
   background-color: transparent;
   position: absolute;
   z-index: 10;
-}
+} */
