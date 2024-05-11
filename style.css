@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  overflow-x:hidden ;
+  overflow-x:hidden !important;
   /* background-color: #111 !important; */
 }
 a{
@@ -705,7 +705,7 @@ progress::-webkit-progress-value {
   .project-img {
     height: 12em;
     width: 20em;
-    transition: 0.9s ease;
+    /* transition: 0.9s ease; */
   }
   .project-img:hover {
     transform: scale(1.1);
