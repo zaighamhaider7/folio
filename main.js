@@ -231,7 +231,7 @@ gsap.from(".project-outer #first-project-content", {
         trigger: ".project-outer #first-project-content",
         scroller: "body",
         start: "top 150%",
-        end: "top 30%",
+        end: "top -5%",
         scrub: 2
     }
 })
@@ -250,7 +250,7 @@ gsap.from(".project-outer #second-project-content", {
         trigger: ".project-outer #second-project-content",
         scroller: "body",
         start: "top 150%",
-        end: "top 30%",
+        end: "top -5%",
         scrub: 2
     }
 })
@@ -265,7 +265,7 @@ gsap.from(".project-outer #second-img", {
         trigger: ".project-outer #second-img",
         scroller: "body",
         start: "top 150%",
-        end: "top 30%",
+        end: "top -5%",
         scrub: 2
     }
 })
@@ -282,7 +282,7 @@ gsap.from(".project-outer #third-img", {
         trigger: ".project-outer #third-img",
         scroller: "body",
         start: "top 150%",
-        end: "top 30%",
+        end: "top -5%",
         scrub: 2
     }
 })
@@ -298,7 +298,7 @@ gsap.from(".project-outer #third-project-content", {
         trigger: ".project-outer #third-project-content",
         scroller: "body",
         start: "top 150%",
-        end: "top 30%",
+        end: "top -5%",
         scrub: 2
     }
 })
