@@ -444,7 +444,7 @@ li {
   .service-cards{
       width: 25rem !important;
       height: 10em !important;
-      /* transition: 0.6s !important; */
+      transition: 0.6s !important;
       color: #ffffff !important;
       z-index: 9;
     display: flex !important;
@@ -457,7 +457,7 @@ li {
   }
   .service-cards h3{
     font-weight: 500 !important;
-    /* transition: 0.3s ease !important; */
+    transition: 0.3s ease !important;
     letter-spacing: 2px !important;
     text-align: center !important;
 }

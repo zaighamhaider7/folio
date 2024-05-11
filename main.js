@@ -180,27 +180,25 @@ secondproject.addEventListener("mouseleave",()=>{
     gsap.to(secondproject,{
         // scale:1,
         duration:1,
-        transform:"skewX(10deg)",
+        transform:"skewX(-10deg)",
     })
 })
 
 // third project image hover
 
-thirdproject.addEventListener("mousemove",()=>{
-    gsap.to(thirdproject,{
-        // scale:1.2,
-        duration:1,
-        transform:"skewX(0deg)",
-    })
-})
+// thirdproject.addEventListener("mousemove",()=>{
+//     gsap.to(thirdproject,{
+//         duration:1,
+//         transform:"skewX(0deg)",
+//     })
+// })
 
-thirdproject.addEventListener("mouseleave",()=>{
-    gsap.to(thirdproject,{
-        // scale:1,
-        duration:1,
-        transform:"skewX(10deg)",
-    })
-})
+// thirdproject.addEventListener("mouseleave",()=>{
+//     gsap.to(thirdproject,{
+//         duration:1,
+//         transform:"skewX(10deg)",
+//     })
+// })
 
 
 
@@ -272,36 +270,34 @@ gsap.from(".project-outer #second-img", {
 
 // third project
 
-gsap.from(".project-outer #third-img", {
-    // x: -1000,
-    scale:0,
-    opacity: 0,
-    duration: 1,
-    delay: 1,
-    scrollTrigger: {
-        trigger: ".project-outer #third-img",
-        scroller: "body",
-        start: "top 150%",
-        end: "top -5%",
-        scrub: 2
-    }
-})
+// gsap.from(".project-outer #third-img", {
+//     scale:0,
+//     opacity: 0,
+//     duration: 1,
+//     delay: 1,
+//     scrollTrigger: {
+//         trigger: ".project-outer #third-img",
+//         scroller: "body",
+//         start: "top 150%",
+//         end: "top -5%",
+//         scrub: 2
+//     }
+// })
 
 
-gsap.from(".project-outer #third-project-content", {
-    // x: 800,
-    scale:0,
-    opacity: 0,
-    duration: 1,
-    delay: 1,
-    scrollTrigger: {
-        trigger: ".project-outer #third-project-content",
-        scroller: "body",
-        start: "top 150%",
-        end: "top -5%",
-        scrub: 2
-    }
-})
+// gsap.from(".project-outer #third-project-content", {
+//     scale:0,
+//     opacity: 0,
+//     duration: 1,
+//     delay: 1,
+//     scrollTrigger: {
+//         trigger: ".project-outer #third-project-content",
+//         scroller: "body",
+//         start: "top 150%",
+//         end: "top -5%",
+//         scrub: 2
+//     }
+// })
 
 
 
