@@ -5,7 +5,7 @@
 }
 body{
   overflow-x:hidden ;
-  background-color: #111 !important;
+  /* background-color: #111 !important; */
 }
 a{
   color: #fff !important;
@@ -551,7 +551,7 @@ li {
   gap: 1em;
 }
 progress{
-  width: 32em;
+  width: 25em;
   height: 15px;
   border-radius: 10px;
 }
@@ -657,11 +657,9 @@ progress::-webkit-progress-value {
   height: 18em;
   width: 28em;
   border-radius: 16px;
-  transition: 0.6s ease-in;
   transform: skewX(10deg);
 }
 .project-img:hover {
-  transform: scale(1.2);
   box-shadow: 0px 0px 40px 0px #ffffff62;
 }
 #first-img{
@@ -738,6 +736,9 @@ progress::-webkit-progress-value {
       text-align: center;
     }
 }
+
+/* contact section start */
+
 
 
 

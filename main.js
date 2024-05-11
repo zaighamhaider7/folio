@@ -1,129 +1,125 @@
 // webnav animation
 
 let webnav = gsap.timeline()
-webnav.from(".webnav h2",{
-    y:-30,
-    opacity:0,
-    duration:1,
-    delay:0.2,
+webnav.from(".webnav h2", {
+    y: -30,
+    opacity: 0,
+    duration: 1,
+    delay: 0.2,
 })
-webnav.from(".webnav ul a",{
-    y:-30,
-    opacity:0,
-    duration:1,
-    stagger:0.1
+webnav.from(".webnav ul a", {
+    y: -30,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.1
 })
-gsap.from(".webnav .menu",{
-    y:-30,
-    opacity:0,
-    duration:1,
-    delay:0.2,
+gsap.from(".webnav .menu", {
+    y: -30,
+    opacity: 0,
+    duration: 1,
+    delay: 0.2,
 })
 // responsive nav  animation
-document.getElementById("humburger").addEventListener("click", function () {
-    gsap.from(".respnav h2",{
-        y:-30,
-        opacity:0,
-        duration:1,
-        delay:0.2,
+document.getElementById("humburger").addEventListener("click", () => {
+    gsap.from(".respnav h2", {
+        y: -30,
+        opacity: 0,
+        duration: 1,
+        delay: 0.2,
     })
 
-    gsap.from(".respnav .cross",{
-        y:-30,
-        opacity:0,
-        duration:1,
-        delay:0.2,
+    gsap.from(".respnav .cross", {
+        y: -30,
+        opacity: 0,
+        duration: 1,
+        delay: 0.2,
     })
 
-    gsap.from(".respnav ul a",{
-        x:-30,
-        opacity:0,
-        duration:1,
-        stagger:0.2
+    gsap.from(".respnav ul a", {
+        x: -30,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2
     })
 });
 
 // hero-section animation
 
-gsap.from(".hero-detail h2",{
-    x:-1000,
-    opacity:0,
-    duration:1,
-    delay:0.2,
-    stagger:0.2
+gsap.from(".hero-detail h2", {
+    x: -1000,
+    opacity: 0,
+    duration: 1,
+    delay: 0.2,
+    stagger: 0.2
 })
-gsap.from(" .hero-btn",{
-    x:-1000,
-    opacity:0,
-    duration:1,
-    delay:0.8
+gsap.from(" .hero-btn", {
+    x: -1000,
+    opacity: 0,
+    duration: 1,
+    delay: 0.8
 })
-gsap.from(".hero-img-div img",{
-    x:1000,
-    opacity:0,
-    duration:1,
-    delay:0.5,
+gsap.from(".hero-img-div img", {
+    x: 1000,
+    opacity: 0,
+    duration: 1,
+    delay: 0.5,
 })
 
 // icons animation
 
 
-gsap.from("#icons .social",{
-    y:50,
-    opacity:0,
-    duration:1,
-    stagger:0.5
+gsap.from("#icons .social", {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.5
 })
 
 
 // about section animation 
 
-gsap.from(".about-detail",{
-    // x:-1000,
-    scale:0,
-    opacity:0,
-    duration:1,
-    delay:0.5,
-    scrollTrigger:{
-        trigger:".about-detail",
-        scroller:"body",
-        start:"top 150%",
-        end:"top 30%",
-        scrub:2
+gsap.from(".about-detail", {
+    scale: 0,
+    opacity: 0,
+    duration: 1,
+    delay: 0.5,
+    scrollTrigger: {
+        trigger: ".about-detail",
+        scroller: "body",
+        start: "top 150%",
+        end: "top 30%",
+        scrub: 2
     }
 })
-gsap.from(".about-img-div img",{
-    // x:1000,
-    scale:0,
-    opacity:0,
-    duration:1,
-    delay:0.5,
-    scrollTrigger:{
-        trigger:".about-img-div img",
-        scroller:"body",
-        start:"top 150%",
-        end:"top 30%",
-        scrub:2,
+gsap.from(".about-img-div img", {
+    scale: 0,
+    opacity: 0,
+    duration: 1,
+    delay: 0.5,
+    scrollTrigger: {
+        trigger: ".about-img-div img",
+        scroller: "body",
+        start: "top 150%",
+        end: "top 30%",
+        scrub: 2,
     }
 })
 
 
 // services section animation 
 
-gsap.from(".services-outer .row .col",{
-    // x:1000,
-    // y:500,
-    scale:0,
-    opacity:0,
-    duration:1,
-    delay:0.3,
-    stagger:0.2,
-    scrollTrigger:{
-        trigger:".services-outer .row .col",
-        scroller:"body",
-        start:"top 150%",
-        end:"top 30%",
-        scrub:2,
+gsap.from(".services-outer .row .col", {
+    scale: 0,
+    opacity: 0,
+    duration: 1,
+    delay: 0.3,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".services-outer .row .col",
+        scroller: "body",
+        start: "top 150%",
+        end: "top 30%",
+        scrub: 2,
     }
 })
 
@@ -131,76 +127,175 @@ gsap.from(".services-outer .row .col",{
 
 // skills section animation 
 
-gsap.from(".skill-outer .skills",{
-    // x:-1000,
-    // y:500,
-    scale:0,
-    opacity:0,
-    duration:1,
-    delay:1,
-    // stagger:0.5,
-    scrollTrigger:{
-        trigger:".skill-outer .skills progress",
-        scroller:"body",
-        start:"top 150%",
-        end:"top 30%",
-        scrub:2,
+gsap.from(".skill-outer .skills", {
+    scale: 0,
+    opacity: 0,
+    duration: 1,
+    delay: 1,
+    scrollTrigger: {
+        trigger: ".skill-outer .skills progress",
+        scroller: "body",
+        start: "top 150%",
+        end: "top 30%",
+        scrub: 2,
     }
 })
 
 
 // project section animation
 
+let firstproject = document.getElementById("first-img");
+let secondproject = document.getElementById("second-img");
+let thirdproject = document.getElementById("third-img");
+
+// first project image hover
+
+firstproject.addEventListener("mousemove",()=>{
+    gsap.to(firstproject,{
+        scale:1.2,
+        duration:1,
+        transform:"skewX(0deg)",
+    })
+})
+
+firstproject.addEventListener("mouseleave",()=>{
+    gsap.to(firstproject,{
+        scale:1,
+        duration:1,
+        transform:"skewX(10deg)",
+    })
+})
+
+// second project image hover
+
+secondproject.addEventListener("mousemove",()=>{
+    gsap.to(secondproject,{
+        scale:1.2,
+        duration:1,
+        transform:"skewX(0deg)",
+    })
+})
+
+secondproject.addEventListener("mouseleave",()=>{
+    gsap.to(secondproject,{
+        scale:1,
+        duration:1,
+        transform:"skewX(10deg)",
+    })
+})
+
+// third project image hover
+
+thirdproject.addEventListener("mousemove",()=>{
+    gsap.to(thirdproject,{
+        scale:1.2,
+        duration:1,
+        transform:"skewX(0deg)",
+    })
+})
+
+thirdproject.addEventListener("mouseleave",()=>{
+    gsap.to(thirdproject,{
+        scale:1,
+        duration:1,
+        transform:"skewX(10deg)",
+    })
+})
+
+
+
 // first project
 
+gsap.from("#first-img", {
+    x: -1000,
+    opacity: 0,
+    duration: 1,
+    delay: 0.2,
+    scrollTrigger: {
+        trigger: "#first-img",
+        scroller: "body",
+        start: "top 150%",
+        end: "top 30%",
+        scrub: 2
+    }
+})
 
-
-// gsap.from("#first-project-content",{
-//     x:800,
-//     opacity:0,
-//     duration:1,
-//     delay:0.2,
-//     scrollTrigger:{
-//         trigger:"#first-project-content",
-//         scroller:"body",
-//         start:"top 150%",
-//         end:"top 30%",
-//         scrub:2
-//     }
-// })
-
-// second project
-
-// gsap.from("#second-project-content",{
-//     x:-800,
-//     opacity:0,
-//     duration:1,
-//     delay:0.2,
-//     scrollTrigger:{
-//         trigger:"#second-project-content",
-//         scroller:"body",
-//         start:"top 150%",
-//         end:"top 30%",
-//         scrub:2
-//     }
-// })
-
+gsap.from("#first-project-content", {
+    x: 1000,
+    opacity: 0,
+    duration: 1,
+    delay: 0.2,
+    scrollTrigger: {
+        trigger: "#first-project-content",
+        scroller: "body",
+        start: "top 150%",
+        end: "top 30%",
+        scrub: 2
+    }
+})
 
 // second project
 
-// gsap.from("#third-project-content",{
-//     x:800,
-//     opacity:0,
-//     duration:1,
-//     delay:0.2,
-//     scrollTrigger:{
-//         trigger:"#third-project-content",
-//         scroller:"body",
-//         start:"top 150%",
-//         end:"top 30%",
-//         scrub:2
-//     }
-// })
+
+
+gsap.from("#second-project-content", {
+    x: -1000,
+    opacity: 0,
+    duration: 1,
+    delay: 0.2,
+    scrollTrigger: {
+        trigger: "#second-project-content",
+        scroller: "body",
+        start: "top 150%",
+        end: "top 30%",
+        scrub: 2
+    }
+})
+
+gsap.from("#second-img", {
+    x: 1000,
+    opacity: 0,
+    duration: 1,
+    delay: 0.2,
+    scrollTrigger: {
+        trigger: "#second-img",
+        scroller: "body",
+        start: "top 150%",
+        end: "top 30%",
+        scrub: 2
+    }
+})
+
+// third project
+
+gsap.from("#third-img", {
+    x: -1000,
+    opacity: 0,
+    duration: 1,
+    delay: 0.2,
+    scrollTrigger: {
+        trigger: "#third-img",
+        scroller: "body",
+        start: "top 150%",
+        end: "top 30%",
+        scrub: 2
+    }
+})
+
+
+gsap.from("#third-project-content", {
+    x: 800,
+    opacity: 0,
+    duration: 1,
+    delay: 0.2,
+    scrollTrigger: {
+        trigger: "#third-project-content",
+        scroller: "body",
+        start: "top 150%",
+        end: "top 30%",
+        scrub: 2
+    }
+})
 
 
 
@@ -218,106 +313,17 @@ gsap.from(".skill-outer .skills",{
 
 let body = document.getElementById("body");
 let cursor = document.getElementById("cursor");
-// let name = document.getElementById("name");
-// let about = document.getElementById("about");
-// let service = document.getElementById("services");
-// let skill = document.getElementById("skills");
 
 
-body.addEventListener("mousemove",function(cur){
-    gsap.to(cursor,{
-        x:cur.x,
-        y:cur.y
+body.addEventListener("mousemove", function (cur) {
+    gsap.to(cursor, {
+        x: cur.x,
+        y: cur.y
     })
 })
 
-// about section cursor
-
-// name.addEventListener("mousemove",function(cur){
-//     // cursor.innerHTML="About"
-//     gsap.to(cursor,{
-//        scale:2,
-//        backgroundColor:"#fff"
-//     })
-// })
-
-// name.addEventListener("mouseleave",function(cur){
-//     cursor.innerHTML=""
-//     gsap.to(cursor,{
-//        scale:1,
-//        backgroundColor:"#ffbd39"
-//     })
-// })
-
-// service section cursor
-
-// service.addEventListener("mousemove",function(cur){
-//     cursor.innerHTML="services"
-//     gsap.to(cursor,{
-//        scale:3
-//     })
-// })
-
-// service.addEventListener("mouseleave",function(cur){
-//     cursor.innerHTML=""
-//     gsap.to(cursor,{
-//        scale:1
-//     })
-// })
-
-// skills section cursor
-
-// skill.addEventListener("mousemove",function(cur){
-//     cursor.innerHTML="Skills"
-//     gsap.to(cursor,{
-//        scale:3
-//     })
-// })
-
-// skill.addEventListener("mouseleave",function(cur){
-//     cursor.innerHTML=""
-//     gsap.to(cursor,{
-//        scale:1
-//     })
-// })
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// gsap.to(".project-outer .projects",{
-//     transform:"translateX(-440%)",
-//     scrollTrigger:{
-//      trigger: "#project-sec",
-//      scroller:"body",
-//      start:"top 0%",
-//      end:"top -300%",
-//      scrub:2,
-//      pin:true
-//     }
-   
-// })
