@@ -206,96 +206,96 @@ thirdproject.addEventListener("mouseleave",()=>{
 
 // first project
 
-gsap.from("#first-img", {
-    x: -1000,
-    opacity: 0,
-    duration: 1,
-    delay: 0.2,
-    scrollTrigger: {
-        trigger: "#first-img",
-        scroller: "body",
-        start: "top 150%",
-        end: "top 30%",
-        scrub: 2
-    }
-})
+// gsap.from("#first-img", {
+//     x: -1000,
+//     opacity: 0,
+//     duration: 1,
+//     delay: 0.2,
+//     scrollTrigger: {
+//         trigger: "#first-img",
+//         scroller: "body",
+//         start: "top 150%",
+//         end: "top 30%",
+//         scrub: 2
+//     }
+// })
 
-gsap.from("#first-project-content", {
-    x: 1000,
-    opacity: 0,
-    duration: 1,
-    delay: 0.2,
-    scrollTrigger: {
-        trigger: "#first-project-content",
-        scroller: "body",
-        start: "top 150%",
-        end: "top 30%",
-        scrub: 2
-    }
-})
+// gsap.from("#first-project-content", {
+//     x: 1000,
+//     opacity: 0,
+//     duration: 1,
+//     delay: 0.2,
+//     scrollTrigger: {
+//         trigger: "#first-project-content",
+//         scroller: "body",
+//         start: "top 150%",
+//         end: "top 30%",
+//         scrub: 2
+//     }
+// })
 
 // second project
 
 
 
-gsap.from("#second-project-content", {
-    x: -1000,
-    opacity: 0,
-    duration: 1,
-    delay: 0.2,
-    scrollTrigger: {
-        trigger: "#second-project-content",
-        scroller: "body",
-        start: "top 150%",
-        end: "top 30%",
-        scrub: 2
-    }
-})
+// gsap.from("#second-project-content", {
+//     x: -1000,
+//     opacity: 0,
+//     duration: 1,
+//     delay: 0.2,
+//     scrollTrigger: {
+//         trigger: "#second-project-content",
+//         scroller: "body",
+//         start: "top 150%",
+//         end: "top 30%",
+//         scrub: 2
+//     }
+// })
 
-gsap.from("#second-img", {
-    x: 1000,
-    opacity: 0,
-    duration: 1,
-    delay: 0.2,
-    scrollTrigger: {
-        trigger: "#second-img",
-        scroller: "body",
-        start: "top 150%",
-        end: "top 30%",
-        scrub: 2
-    }
-})
+// gsap.from("#second-img", {
+//     x: 1000,
+//     opacity: 0,
+//     duration: 1,
+//     delay: 0.2,
+//     scrollTrigger: {
+//         trigger: "#second-img",
+//         scroller: "body",
+//         start: "top 150%",
+//         end: "top 30%",
+//         scrub: 2
+//     }
+// })
 
 // third project
 
-gsap.from("#third-img", {
-    x: -1000,
-    opacity: 0,
-    duration: 1,
-    delay: 0.2,
-    scrollTrigger: {
-        trigger: "#third-img",
-        scroller: "body",
-        start: "top 150%",
-        end: "top 30%",
-        scrub: 2
-    }
-})
+// gsap.from("#third-img", {
+//     x: -1000,
+//     opacity: 0,
+//     duration: 1,
+//     delay: 0.2,
+//     scrollTrigger: {
+//         trigger: "#third-img",
+//         scroller: "body",
+//         start: "top 150%",
+//         end: "top 30%",
+//         scrub: 2
+//     }
+// })
 
 
-gsap.from("#third-project-content", {
-    x: 800,
-    opacity: 0,
-    duration: 1,
-    delay: 0.2,
-    scrollTrigger: {
-        trigger: "#third-project-content",
-        scroller: "body",
-        start: "top 150%",
-        end: "top 30%",
-        scrub: 2
-    }
-})
+// gsap.from("#third-project-content", {
+//     x: 800,
+//     opacity: 0,
+//     duration: 1,
+//     delay: 0.2,
+//     scrollTrigger: {
+//         trigger: "#third-project-content",
+//         scroller: "body",
+//         start: "top 150%",
+//         end: "top 30%",
+//         scrub: 2
+//     }
+// })
 
 
 
