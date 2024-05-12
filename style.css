@@ -227,6 +227,7 @@ li {
     height: 80vh;
     width: 100%;
     cursor: default;
+    padding: 0% 4%;
   }
   .hero-detail h2 {
     text-align: left;
@@ -283,7 +284,7 @@ li {
 .about-overlay{
   position: absolute;
     top: 25%;
-    left: -15%;
+    left: -17%;
     font-size: 5.5rem;
     letter-spacing: 4px;
     z-index: -99;
