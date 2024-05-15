@@ -37,6 +37,9 @@
                 <a href="#services">
                     <li>Services</li>
                 </a>
+                <a href="#skills">
+                    <li>Skills</li>
+                </a>
                 <a href="#project">
                     <li>Projects</li>
                 </a>
@@ -62,16 +65,19 @@
             <a href="./index.html">
                 <li>Home</li>
             </a>
-            <a href="#about">
+            <a href="#about" id="aboutli">
                 <li>About</li>
             </a>
-            <a href="#services">
+            <a href="#services" id="servicesli">
                 <li>Services</li>
             </a>
-            <a href="#project">
+            <a href="#skills" id="skillli">
+                <li>Skills</li>
+            </a>
+            <a href="#project" id="projectli">
                 <li>Projects</li>
             </a>
-            <a href="#">
+            <a href="#" id="contactli">
                 <li>Contact</li>
             </a>
         </ul>
@@ -362,8 +368,58 @@
 
                     }
                 )
+                $("#aboutli").click(
+                    function(){
+                        $('.respnav').animate(
+                            {
+                                "right": "-100%",
+
+                            },800
+                        )
+                    }
+                );
+                $("#servicesli").click(
+                    function(){
+                        $('.respnav').animate(
+                            {
+                                "right": "-100%",
+
+                            },800
+                        )
+                    }
+                );
+                $("#skillli").click(
+                    function(){
+                        $('.respnav').animate(
+                            {
+                                "right": "-100%",
+
+                            },800
+                        )
+                    }
+                );
+                $("#projectli").click(
+                    function(){
+                        $('.respnav').animate(
+                            {
+                                "right": "-100%",
+
+                            },800
+                        )
+                    }
+                );
+                $("#contactli").click(
+                    function(){
+                        $('.respnav').animate(
+                            {
+                                "right": "-100%",
+
+                            },800
+                        )
+                    }
+                )
             }
-        )
+        );
     </script>
 </body>
 
