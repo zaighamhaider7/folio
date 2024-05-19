@@ -381,13 +381,14 @@
               <div class="contact-form">
                 <span class="circle one"></span>
                 <span class="circle two"></span>
-      
-                <form action="https://formsubmit.co/zaighamhaider8@gmail.com" method="POST">
+                <!--  -->
+                <form action="https://formsubmit.co/zaighamhaider8@gmail.com" method="POST" >
                   <h3 class="title">Contact Me</h3>
                   <div class="input-container">
-                    <input type="text" name="name" class="input" />
-                    <label for="">Username</label>
+                    <input type="text" name="name" class="input" id="name">
+                    <label for="">Name</label>
                     <span>Username</span>
+                    <p id="namemsg"></p>
                   </div>
                   <div class="input-container">
                     <input type="email" name="email" class="input" />
@@ -404,7 +405,7 @@
                     <label for="">Message</label>
                     <span>Message</span>
                   </div>
-                  <input type="submit" value="Send" class="btn" />
+                  <input type="submit" value="Send" class="btn" id="sendbtn">
                 </form>
               </div>
             </div>

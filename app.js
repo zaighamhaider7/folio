@@ -16,3 +16,24 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+
+
+// form validation
+
+document.getElementById("sendbtn").addEventListener("click",()=>{
+//   let usernamepattern =/(?=.*[a-zA-z])/g
+// let usernamematch = document.getElementById("name").value.match(usernamepattern);
+console.log("helooo");
+// if(usernamematch){
+//   alert("ok")
+// }
+// else{
+//   alert('no')
+// }
+
+})
+
+
+
+
