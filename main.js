@@ -1,7 +1,7 @@
 // webnav animation
 
 let webnav = gsap.timeline()
-webnav.from(".webnav h2", {
+webnav.from(".webnav .logo", {
     y: -30,
     opacity: 0,
     duration: 1,
@@ -21,7 +21,7 @@ gsap.from(".webnav .menu", {
 })
 // responsive nav  animation
 document.getElementById("humburger").addEventListener("click", () => {
-    gsap.from(".respnav h2", {
+    gsap.from(".respnav .logo", {
         y: -30,
         opacity: 0,
         duration: 1,

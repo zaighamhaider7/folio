@@ -135,91 +135,21 @@ li {
 .hero-detail h2{
   font-size: 3rem;
   font-weight: 400;
+  color: #fff;
  }
  .hero-btn{
-  padding: 10px 15px;
-  font-size: 15px;
-  position: relative;
+  height: 2.5em;
+  width: 8em;
+  border-radius: 8px;
   background: transparent;
   color: #fff;
   font-weight: bold;
-  text-transform: uppercase;
   border: 2px solid #ffbd39;
   cursor: pointer;
-  overflow: hidden;
-  border-radius: 100px;
   margin-top: 1em;
 }
-
-.hero-btn:hover {
-  color: #000;
-  font-weight: bold;
-}
-.hero-btn span {
-  transition: all 0.7s;
-  z-index: -1;
-}
-
-.hero-btn .first {
-  content: "";
-  position: absolute;
-  right: 100%;
-  top: 0;
-  width: 25%;
-  height: 100%;
-  background: #ffbd39;
-}
-
-.hero-btn:hover .first {
-  top: 0;
-  right: 0;
-}
-.hero-btn .second {
-  content: "";
-  position: absolute;
-  left: 25%;
-  top: -100%;
-  height: 100%;
-  width: 25%;
-  background: #ffbd39;
-}
-
-.hero-btn:hover .second {
-  top: 0;
-  left: 50%;
-}
-
-.hero-btn .third {
-  content: "";
-  position: absolute;
-  left: 50%;
-  height: 100%;
-  top: 100%;
-  width: 25%;
-  background: #ffbd39;
-}
-
-.hero-btn:hover .third {
-  top: 0;
-  left: 25%;
-}
-
-.hero-btn .fourth {
-  content: "";
-  position: absolute;
-  left: 100%;
-  top: 0;
-  height: 100%;
-  width: 25%;
-  background: #ffbd39;
-}
-
-.hero-btn:hover .fourth {
-  top: 0;
-  left: 0;
-}
 .hero-img{
-  height: 450px;
+  height: 430px;
   width: auto;
 }
 
@@ -281,7 +211,7 @@ li {
 #about h2{
   text-align: center;
   font-size: 2.6rem;
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
   /* margin-top: 2em; */
 }
@@ -415,7 +345,7 @@ li {
   #services h2{
     text-align: center;
     font-size: 2.4rem;
-    color: #ffffff;
+    color: #fff;
     /* margin-top: 2em; */
     font-weight: bold;
   }
@@ -450,7 +380,7 @@ li {
       width: 25rem !important;
       height: 10em !important;
       transition: 0.6s !important;
-      color: #ffffff !important;
+      color: #fff !important;
       z-index: 9;
     display: flex !important;
     justify-content: center !important;
@@ -519,7 +449,7 @@ li {
 #skills h2{
   text-align: center;
   font-size: 2.6rem;
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
   /* margin-top: 2em; */
 }
@@ -561,7 +491,7 @@ progress{
   border-radius: 10px;
 }
 progress::-webkit-progress-bar {
-  background-color:#ffffff;
+  background-color:#fff;
   border-radius: 10px;
 }
 progress::-webkit-progress-value {
@@ -619,12 +549,12 @@ progress::-webkit-progress-value {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5em;
+  gap: 2em;
 }
 #project h2{
   text-align: center;
   font-size: 2.4rem;
-  color: #ffffff;
+  color: #fff;
   /* margin-top: 2em; */
   font-weight: bold;
 }
@@ -721,7 +651,7 @@ progress::-webkit-progress-value {
 .content-overlay{
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.752);
+  background-color: rgba(0, 0, 0, 0.922);
   position: absolute;
   bottom: -100%;
   left: 0%;
@@ -738,6 +668,14 @@ progress::-webkit-progress-value {
 }
 .griditems:hover .content-overlay{
   bottom: 0%;
+}
+.visitbtn{
+  height: 2em;
+  width: 8em;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #ffbd39;
+  border-radius: 8px;
 }
 
 
@@ -756,7 +694,7 @@ progress::-webkit-progress-value {
 }
 .contact-heading h2 {
   font-size: 2rem;
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -807,7 +745,6 @@ progress::-webkit-progress-value {
   height: 50px;
   width: 50px;
   background-color: #ffbd39;
-  /* border: 2px dashed #ffbd39; */
   border-radius: 45px;
   z-index: 9;
   position: fixed;
@@ -817,13 +754,6 @@ progress::-webkit-progress-value {
   color: #fff;
   mix-blend-mode: difference;
 }
-/* .overlay{
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
-  position: absolute;
-  z-index: 10;
-} */
 
 
 
@@ -842,96 +772,3 @@ progress::-webkit-progress-value {
 
 
 
-/* .project-outer{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 90vh;
-  width: 100%;
-}
-.project-content{
-  height: fit-content;
-  width: 25em;
-  padding: 0% 2%;
-  color: #ffffff;
-}
-.project-content button {
-  height: 2em;
-  width: 8em;
-  border: 2px solid #ffffff;
-  background-color: transparent;
-  color: #ffffff;
-}
-.project-img{
-  height: 18em;
-  width: 28em;
-  border-radius: 16px;
-  transform: skewX(10deg);
-}
-.project-img:hover {
-  box-shadow: 0px 0px 40px 0px #ffffff62;
-}
-#first-img{
-  background-image: url(./assets/fastfoodresturant.png);
-  background-position: center;
-  background-size: cover;
-}
-#second-img{
-  background-image: url(./assets/sports\ info.png);
-  background-position: center;
-  background-size: cover;
-  transform: skewX(-10deg);
-}
-#third-img{
-  background-image: url(./assets/sports\ info.png);
-  background-position: center;
-  background-size: cover;
-}
-@media(max-width:960px){
-  .project-outer {
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5em;
-    margin-top: 5em;
-  }
- #second-project{
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 5em;
-  }
-  .project-img {
-    height: 12em;
-    width: 20em;
-  }
-  .project-img:hover {
-    box-shadow: 0px 0px 40px 0px #ffffff62;
-  }
-  #second-img:hover {
-      box-shadow: 0px 0px 40px 0px #ffffff62;
-    }
-  .project-content {
-    width: 20em;
-    text-align: center;
-  }
-}
-@media(max-width:400px){
-  .project-img {
-    height: 12em;
-    width: 16em;
-    position: relative;
-    border-radius: 16px;
-    transform: skewX(10deg);
-  }
-  .project-content {
-      width: 18em;
-      text-align: center;
-    }
-} */
