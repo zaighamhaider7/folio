@@ -133,10 +133,11 @@ li {
   overflow-x: hidden !important;
 }
 .hero-detail h2{
-  font-size: 3.5rem;
+  font-size: 3rem;
+  font-weight: 400;
  }
  .hero-btn{
-  padding: 10px 40px;
+  padding: 10px 15px;
   font-size: 15px;
   position: relative;
   background: transparent;
@@ -665,6 +666,7 @@ progress::-webkit-progress-value {
       width: 100%;
       justify-content: center;
       align-items: center;
+      overflow: hidden !important;
   }
 }
 @media (max-width:880px){
@@ -687,7 +689,7 @@ progress::-webkit-progress-value {
   display: flex;
   background-image: url(./assets/fastfoodresturant.png);
   background-size: cover;
-  transition: all 0.9s !important;
+  transition: 0.6s !important;
   top: 0%;
 }
 .griditems:nth-child(2){
@@ -723,7 +725,7 @@ progress::-webkit-progress-value {
   position: absolute;
   bottom: -100%;
   left: 0%;
-  transition: all 0.9s;
+  transition: 0.6s;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -739,37 +741,6 @@ progress::-webkit-progress-value {
 }
 
 
-/* project section start */
-/* #project{ */
-  /* height: 100%;
-  width: 100%; */
-  /* overflow-x: hidden !important; */
-/* } */
-/* .skill-heading h2 {
-  font-size: 2.5rem;
-  color: #ffffff;
-  font-weight: bold;
-} */
-
-/* .project-heading {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 100%;
-}
-
-.project-overlay {
-  position: absolute;
-  top: 30%;
-  font-size: 3.8rem;
-  letter-spacing: 4px;
-  z-index: -99;
-  color: #9999992c;
-  font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} */
 
 
 

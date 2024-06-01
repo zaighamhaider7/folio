@@ -78,227 +78,87 @@ gsap.from("#icons .social", {
 
 // about section animation 
 
-gsap.from(".about-detail", {
-    scale: 0,
-    opacity: 0,
-    duration: 1,
-    delay: 0.5,
-    scrollTrigger: {
-        trigger: ".about-detail",
-        scroller: "body",
-        start: "top 150%",
-        end: "top 30%",
-        scrub: 2
-    }
-})
-gsap.from(".about-img-div img", {
-    scale: 0,
-    opacity: 0,
-    duration: 1,
-    delay: 0.5,
-    scrollTrigger: {
-        trigger: ".about-img-div img",
-        scroller: "body",
-        start: "top 150%",
-        end: "top 30%",
-        scrub: 2,
-    }
-})
+// gsap.from(".about-detail", {
+//     scale: 0,
+//     opacity: 0,
+//     duration: 1,
+//     delay: 0.5,
+//     scrollTrigger: {
+//         trigger: ".about-detail",
+//         scroller: "body",
+//         start: "top 150%",
+//         end: "top 30%",
+//         scrub: 2
+//     }
+// })
+// gsap.from(".about-img-div img", {
+//     scale: 0,
+//     opacity: 0,
+//     duration: 1,
+//     delay: 0.5,
+//     scrollTrigger: {
+//         trigger: ".about-img-div img",
+//         scroller: "body",
+//         start: "top 150%",
+//         end: "top 30%",
+//         scrub: 2,
+//     }
+// })
 
 
 // services section animation 
 
-gsap.from(".services-outer .row .col", {
-    scale: 0,
-    opacity: 0,
-    duration: 1,
-    delay: 0.3,
-    stagger: 0.2,
-    scrollTrigger: {
-        trigger: ".services-outer .row .col",
-        scroller: "body",
-        start: "top 150%",
-        end: "top 30%",
-        scrub: 2,
-    }
-})
+// gsap.from(".services-outer .row .col", {
+//     scale: 0,
+//     opacity: 0,
+//     duration: 1,
+//     delay: 0.3,
+//     stagger: 0.2,
+//     scrollTrigger: {
+//         trigger: ".services-outer .row .col",
+//         scroller: "body",
+//         start: "top 150%",
+//         end: "top 30%",
+//         scrub: 2,
+//     }
+// })
 
 
 
 // skills section animation 
 
-gsap.from(".skill-outer .skills", {
-    scale: 0,
-    opacity: 0,
-    duration: 1,
-    delay: 1,
-    scrollTrigger: {
-        trigger: ".skill-outer .skills progress",
-        scroller: "body",
-        start: "top 150%",
-        end: "top 30%",
-        scrub: 2,
-    }
-})
+// gsap.from(".skill-outer .skills", {
+//     scale: 0,
+//     opacity: 0,
+//     duration: 1,
+//     delay: 1,
+//     scrollTrigger: {
+//         trigger: ".skill-outer .skills progress",
+//         scroller: "body",
+//         start: "top 150%",
+//         end: "top 30%",
+//         scrub: 2,
+//     }
+// })
 
 
 // project section animation
 
-let firstproject = document.getElementById("first-img");
-let secondproject = document.getElementById("second-img");
-let thirdproject = document.getElementById("third-img");
 
-// first project image hover
-
-firstproject.addEventListener("mousemove",()=>{
-    gsap.to(firstproject,{
-        // scale:1.2,
-        duration:1,
-        transform:"skewX(0deg)",
-    })
-})
-
-firstproject.addEventListener("mouseleave",()=>{
-    gsap.to(firstproject,{
-        // scale:1,
-        duration:1,
-        transform:"skewX(10deg)",
-    })
-})
-
-// second project image hover
-
-secondproject.addEventListener("mousemove",()=>{
-    gsap.to(secondproject,{
-        // scale:1.2,
-        duration:1,
-        transform:"skewX(0deg)",
-    })
-})
-
-secondproject.addEventListener("mouseleave",()=>{
-    gsap.to(secondproject,{
-        // scale:1,
-        duration:1,
-        transform:"skewX(-10deg)",
-    })
-})
-
-// third project image hover
-
-// thirdproject.addEventListener("mousemove",()=>{
-//     gsap.to(thirdproject,{
-//         duration:1,
-//         transform:"skewX(0deg)",
-//     })
-// })
-
-// thirdproject.addEventListener("mouseleave",()=>{
-//     gsap.to(thirdproject,{
-//         duration:1,
-//         transform:"skewX(10deg)",
-//     })
-// })
-
-
-
-// first project
-
-gsap.from(".project-outer #first-img", {
-    // x: -1000,
-    scale:0,
-    opacity: 0,
-    duration: 1,
-    delay: 1,
-    scrollTrigger: {
-        trigger: ".project-outer #first-img",
-        scroller: "body",
-        start: "top 150%",
-        end: "top -5%",
-        scrub: 2
-    }
-})
-
-gsap.from(".project-outer #first-project-content", {
-    // x: 1000,
-    scale:0,
-    opacity: 0,
-    duration: 1,
-    delay: 1,
-    scrollTrigger: {
-        trigger: ".project-outer #first-project-content",
-        scroller: "body",
-        start: "top 150%",
-        end: "top -5%",
-        scrub: 2
-    }
-})
-
-// second project
-
-
-
-gsap.from(".project-outer #second-project-content", {
-    // x: -1000,
-    scale:0,
-    opacity: 0,
-    duration: 1,
-    delay: 1,
-    scrollTrigger: {
-        trigger: ".project-outer #second-project-content",
-        scroller: "body",
-        start: "top 150%",
-        end: "top -5%",
-        scrub: 2
-    }
-})
-
-gsap.from(".project-outer #second-img", {
-    // x: 1000,
-    scale:0,
-    opacity: 0,
-    duration: 1,
-    delay: 1,
-    scrollTrigger: {
-        trigger: ".project-outer #second-img",
-        scroller: "body",
-        start: "top 150%",
-        end: "top -5%",
-        scrub: 2
-    }
-})
-
-// third project
-
-// gsap.from(".project-outer #third-img", {
+// gsap.from("#grid .griditems", {
 //     scale:0,
 //     opacity: 0,
-//     duration: 1,
-//     delay: 1,
+//     duration: 5,
+//     stagger: 0.5,
 //     scrollTrigger: {
-//         trigger: ".project-outer #third-img",
+//         trigger: "#grid .griditems",
 //         scroller: "body",
-//         start: "top 150%",
-//         end: "top -5%",
+//         start: "top 180%",
+//         markers:true,
+//         // end: "top -5%",
 //         scrub: 2
 //     }
 // })
-
-
-// gsap.from(".project-outer #third-project-content", {
-//     scale:0,
-//     opacity: 0,
-//     duration: 1,
-//     delay: 1,
-//     scrollTrigger: {
-//         trigger: ".project-outer #third-project-content",
-//         scroller: "body",
-//         start: "top 150%",
-//         end: "top -5%",
-//         scrub: 2
-//     }
-// })
-
 
 
 
