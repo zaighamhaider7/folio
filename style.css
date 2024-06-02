@@ -746,12 +746,12 @@ progress::-webkit-progress-value {
   width: 50px;
   background-color: #ffbd39;
   border-radius: 45px;
-  z-index: 9;
+  z-index: 9999;
   position: fixed;
   top: 0%;
-  font-size: 6.5px;
+  /* font-size: 6.5px;
   font-weight: 500;
-  color: #fff;
+  color: #fff; */
   mix-blend-mode: difference;
 }
 
