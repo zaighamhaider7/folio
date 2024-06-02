@@ -440,7 +440,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2m;
+  gap: 3em;
 }
 .skill-heading{
   position: relative;
