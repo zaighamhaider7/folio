@@ -587,6 +587,7 @@ progress::-webkit-progress-value {
     justify-content: center;
     align-items: center;
     gap: 5em;
+    margin-bottom: 2em;
   }
   #grid{
       display: grid;
@@ -742,8 +743,8 @@ progress::-webkit-progress-value {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   background-color: #ffbd39;
   border-radius: 45px;
   z-index: 9999;
@@ -754,9 +755,11 @@ progress::-webkit-progress-value {
   color: #fff; */
   mix-blend-mode: difference;
 }
-
-
-
+@media(max-width:780px){
+  #cursor{
+    display: none;
+  }
+}
 
 
 
