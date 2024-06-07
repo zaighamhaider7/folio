@@ -690,8 +690,9 @@ progress::-webkit-progress-value {
   overflow: hidden;
   border-radius: 10px;
   display: flex;
-  background-image: url(./assets/fastfoodresturant.png);
+  background-image: url(./assets/foods.png);
   background-size: cover;
+  background-position: center;
   transition: 0.6s !important;
   top: 0%;
 }

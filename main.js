@@ -76,6 +76,26 @@ gsap.from("#icons .social", {
 })
 
 
+
+// document.getElementById("food").addEventListener("click",()=>{
+//     window.location.href="https://fastfoodrestaurant-seven.vercel.app/"
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // about section animation 
 
 // gsap.from(".about-detail", {
