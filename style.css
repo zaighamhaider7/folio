@@ -444,11 +444,7 @@ li {
   transition: 0.3s ease !important;
   letter-spacing: 1.5px !important;
   text-align: center !important;
-  font-size: 2vmax;
-}
-
-.service-cards:hover h3 {
-  transform: scale(1.1) !important;
+  font-size: 1.5vmax;
 }
 
 /* @media (max-width:780px){
@@ -648,6 +644,7 @@ progress::-webkit-progress-value {
   width: 100%;
   justify-content: center;
   align-items: center;
+  grid-gap: 5em;
 }
 
 @media (max-width:1200px) {
