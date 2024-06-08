@@ -65,16 +65,26 @@ gsap.from(".hero-img-div img", {
     delay: 0.5,
 })
 
-// icons animation
 
+// loader gsap
 
-// gsap.from("#icons .social", {
-//     y: 50,
-//     opacity: 0,
-//     duration: 1,
-//     stagger: 0.5
+// gsap.from("#h1",{
+//     x:-500,
+//     duration:1,
+//     delay:0.5
+// })
+// gsap.from("#logoimg",{
+//     y:-500,
+//     duration:1,
+//     delay:1
 // })
 
+// setTimeout(() => {
+//     document.getElementById("logo").style.display = "none";
+// }, 3200);
+
+
+// arrow hide show
 
 window.addEventListener("scroll", () => {
     let verticalScrollpx = window.scrollY || window.pageYOffset
@@ -91,6 +101,37 @@ window.addEventListener("scroll", () => {
     }
 })
 
+// cursor mover
+
+let body = document.getElementById("body");
+let cursor = document.getElementById("cursor");
+
+
+body.addEventListener("mousemove", function (cur) {
+    gsap.to(cursor, {
+        x: cur.x,
+        y: cur.y
+    })
+})
+
+let projectone = document.querySelector(".project-one");
+let projecttwo = document.querySelector(".project-two");
+
+projectone.addEventListener("mouseenter", () => {
+    cursor.style.display = "none"
+})
+
+projectone.addEventListener("mouseleave", () => {
+    cursor.style.display = "block"
+})
+
+projecttwo.addEventListener("mouseenter", () => {
+    cursor.style.display = "none"
+})
+
+projecttwo.addEventListener("mouseleave", () => {
+    cursor.style.display = "block"
+})
 
 
 
@@ -100,7 +141,15 @@ window.addEventListener("scroll", () => {
 
 
 
+// icons animation
 
+
+// gsap.from("#icons .social", {
+//     y: 50,
+//     opacity: 0,
+//     duration: 1,
+//     stagger: 0.5
+// })
 
 
 
@@ -200,37 +249,6 @@ window.addEventListener("scroll", () => {
 
 
 
-// cursor mover
-
-let body = document.getElementById("body");
-let cursor = document.getElementById("cursor");
-
-
-body.addEventListener("mousemove", function (cur) {
-    gsap.to(cursor, {
-        x: cur.x,
-        y: cur.y
-    })
-})
-
-let projectone = document.querySelector(".project-one");
-let projecttwo = document.querySelector(".project-two");
-
-projectone.addEventListener("mouseenter", () => {
-    cursor.style.display = "none"
-})
-
-projectone.addEventListener("mouseleave", () => {
-    cursor.style.display = "block"
-})
-
-projecttwo.addEventListener("mouseenter", () => {
-    cursor.style.display = "none"
-})
-
-projecttwo.addEventListener("mouseleave", () => {
-    cursor.style.display = "block"
-})
 
 
 

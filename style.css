@@ -996,8 +996,8 @@ footer {
 
 /* up arrow */
 #up{
-  height: 5em;
-  width: 5em;
+  height: 4em;
+  width: 4em;
   background-color: #111;
   box-shadow: 0px 0px 30px 2px #11111197;
   display: none;
@@ -1010,9 +1010,9 @@ footer {
   z-index: 999 !important;
 }
 #up i{
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #fff;
-  animation: arrow 1s infinite;
+  animation: arrow 1s infinite; 
 }
 @keyframes arrow{
    50%{
@@ -1055,4 +1055,27 @@ footer {
 ::-webkit-scrollbar-thumb {
   background: #ffbd39; 
   border-radius: 45px;
+}
+
+/* loader */
+#logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 999;
+  background-color: #111;
+}
+.logoinner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden !important;
+  color: #fff;
+  gap: 1.5em;
 }
