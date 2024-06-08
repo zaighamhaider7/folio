@@ -68,19 +68,28 @@ gsap.from(".hero-img-div img", {
 // icons animation
 
 
-gsap.from("#icons .social", {
-    y: 50,
-    opacity: 0,
-    duration: 1,
-    stagger: 0.5
-})
-
-
-
-// document.getElementById("food").addEventListener("click",()=>{
-//     window.location.href="https://fastfoodrestaurant-seven.vercel.app/"
+// gsap.from("#icons .social", {
+//     y: 50,
+//     opacity: 0,
+//     duration: 1,
+//     stagger: 0.5
 // })
 
+
+window.addEventListener("scroll", () => {
+    let verticalScrollpx = window.scrollY || window.pageYOffset
+    let arrow = document.getElementById('up')
+
+    if (verticalScrollpx < 100) {
+        arrow.style.display = "none"
+    }
+
+
+    if (verticalScrollpx < 1600 && verticalScrollpx > 100) {
+        // if(cardprod.length <7 ){
+        arrow.style.display = "flex";
+    }
+})
 
 
 
@@ -204,6 +213,24 @@ body.addEventListener("mousemove", function (cur) {
     })
 })
 
+let projectone = document.querySelector(".project-one");
+let projecttwo = document.querySelector(".project-two");
+
+projectone.addEventListener("mouseenter", () => {
+    cursor.style.display = "none"
+})
+
+projectone.addEventListener("mouseleave", () => {
+    cursor.style.display = "block"
+})
+
+projecttwo.addEventListener("mouseenter", () => {
+    cursor.style.display = "none"
+})
+
+projecttwo.addEventListener("mouseleave", () => {
+    cursor.style.display = "block"
+})
 
 
 
