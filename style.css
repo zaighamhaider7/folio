@@ -839,7 +839,7 @@ progress::-webkit-progress-value {
   gap: 1em;
 }
 
-.icons-media {
+.icons-media a {
   height: 2.5em;
   width: 2.5em;
   border-radius: 45px;
