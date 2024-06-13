@@ -1041,12 +1041,6 @@ footer {
   mix-blend-mode: difference;
 }
 
-@media(max-width:780px) {
-  #cursor {
-    display: none;
-  }
-}
-
 /* scroll bar */
 
 ::-webkit-scrollbar {
