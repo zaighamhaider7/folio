@@ -116,6 +116,7 @@ body.addEventListener("mousemove", function (cur) {
 
 let projectone = document.querySelector(".project-one");
 let projecttwo = document.querySelector(".project-two");
+let projectthree = document.querySelector(".project-three");
 
 projectone.addEventListener("mouseenter", () => {
     cursor.style.display = "none"
@@ -130,6 +131,14 @@ projecttwo.addEventListener("mouseenter", () => {
 })
 
 projecttwo.addEventListener("mouseleave", () => {
+    cursor.style.display = "block"
+})
+
+projectthree.addEventListener("mouseenter", () => {
+    cursor.style.display = "none"
+})
+
+projectthree.addEventListener("mouseleave", () => {
     cursor.style.display = "block"
 })
 

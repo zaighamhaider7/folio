@@ -647,7 +647,6 @@ progress::-webkit-progress-value {
   width: 100%;
   justify-content: center;
   align-items: center;
-  grid-gap: 5em;
 }
 
 @media (max-width:1200px) {
@@ -670,7 +669,7 @@ progress::-webkit-progress-value {
     width: 100%;
     justify-content: center;
     align-items: center;
-    overflow: hidden !important;
+    /* overflow: hidden !important; */
   }
 }
 
@@ -705,6 +704,11 @@ progress::-webkit-progress-value {
   background-position: center;
   background-size: cover;
 }
+.griditems:nth-child(3) {
+  background-image: url(./assets/Screenshot\ 2024-07-04\ 160603.png);
+  background-position: center;
+  background-size: cover;
+}
 
 .griditems:hover {
   top: -10px;
@@ -713,9 +717,8 @@ progress::-webkit-progress-value {
 @media (max-width:500px) {
   .griditems {
     height: 13em;
-    width: 18em;
+    width: 18.5em;
     position: relative;
-    overflow: hidden;
     border-radius: 10px;
     display: flex;
     object-fit: cover;
