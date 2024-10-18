@@ -114,33 +114,22 @@ body.addEventListener("mousemove", function (cur) {
     })
 })
 
-let projectone = document.querySelector(".project-one");
-let projecttwo = document.querySelector(".project-two");
-let projectthree = document.querySelector(".project-three");
 
-projectone.addEventListener("mouseenter", () => {
-    cursor.style.display = "none"
-})
 
-projectone.addEventListener("mouseleave", () => {
-    cursor.style.display = "block"
-})
 
-projecttwo.addEventListener("mouseenter", () => {
-    cursor.style.display = "none"
-})
 
-projecttwo.addEventListener("mouseleave", () => {
-    cursor.style.display = "block"
-})
+let projects = document.querySelectorAll(".griditems");
 
-projectthree.addEventListener("mouseenter", () => {
-    cursor.style.display = "none"
-})
+let toggleCursor = (isVisible) => {
+    cursor.style.display = isVisible ? "block" : "none";
+};
 
-projectthree.addEventListener("mouseleave", () => {
-    cursor.style.display = "block"
-})
+projects.forEach((project) => {
+    project.addEventListener("mouseenter", () => toggleCursor(false)); // Hide cursor
+    project.addEventListener("mouseleave", () => toggleCursor(true));  // Show cursor
+});
+
+
 
 
 

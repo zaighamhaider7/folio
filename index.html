@@ -16,6 +16,9 @@
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body data-bs-theme="dark" id="body" class="bg-dark">
@@ -128,29 +131,22 @@
             </h3>
         </div>
         <div class="about-outer">
-            <div class="about-detail">
-                <h2>
-                    Hello there 👋 I'm Zaigham
+            <div class="about-detail" data-aos="fade-right">
+                <h2 style="margin-bottom:0.5em;">
+                    Hello there 👋 I'm <span style="color: #ffbd39;">Zaigham</span>
                 </h2>
                 <p>
-                    I am a junior front-end developer and web designer, with a passion for creating beautiful and
-                    functional
-                    websites. I am eager to expand my skills and experience in the industry, and bring fresh and
-                    innovative
-                    ideas to every project I work on.
+                    I am a junior web developer with a passion for creating beautiful and functional websites. I am eager to expand my skills and experience in the industry and bring fresh and innovative ideas to every project I work on.
                 </p>
                 <p>
-                    I'm a web designer and developer proficient in HTML, CSS, JavaScript.
-                    My goal is to create visually appealing and user-friendly interfaces that work well across all
-                    devices
-                    and platforms.
+                    I'm proficient in HTML, CSS, JavaScript, PHP, and MySQL. My goal is to create visually appealing and user-friendly interfaces that work well across all devices and platforms.
                 </p>
                 <p>
                     I'm passionate about tech and design, always seeking inspiration to create amazing things with you!
                 </p>
             </div>
 
-            <div class="about-img-div">
+            <div class="about-img-div" data-aos="fade-left">
                 <img src="./assets/gif.gif" alt="about-gif" class="about-img">
             </div>
         </div>
@@ -168,29 +164,36 @@
                 SERVICES
             </h3>
         </div>
-        <div class="container  services-outer">
+        <div class="container  services-outer mt-3">
             <div class="row gap-5">
-                <div class="col col-lg-3 col-md-6 col-sm-12 mt-2 mb-2">
+
+                <div class="col col-lg-3 col-md-12 col-12 mt-2 mb-2" data-aos="fade-up"
+                data-aos-duration="1000">
                     <div class="card service-cards">
                         <h3>
-                            WEB DESIGN
+                            FRONTEND DEVELOPMENT
                         </h3>
                     </div>
                 </div>
-                <div class="col col-lg-3 col-md-6 col-sm-12 mt-2 mb-2">
+
+                <div class="col col-lg-3 col-md-12 col-12 mt-2 mb-2"  data-aos="fade-up"
+                data-aos-duration="1000">
                     <div class="card service-cards">
                         <h3>
-                            WEB DEVELOPMENT
+                            BACKEND DEVELOPMENT
                         </h3>
                     </div>
                 </div>
-                <div class="col col-lg-3 col-md-6 col-sm-12 mt-2 mb-2">
+
+                <div class="col col-lg-3 col-md-12 col-12 mt-2 mb-2"  data-aos="fade-up"
+                data-aos-duration="1000">
                     <div class="card service-cards">
                         <h3>
                             RESPONSIVE WEB DESGIN
                         </h3>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -207,7 +210,7 @@
                 SKILLS
             </h3>
         </div>
-        <div class="skill-outer">
+        <div class="skill-outer" data-aos="zoom-in">
             <div class="skills">
                 <div class="skill-head">
                     <h5>
@@ -252,10 +255,10 @@
                         JAVA SCRIPT
                     </h5>
                     <h5>
-                        70%
+                        50%
                     </h5>
                 </div>
-                <progress id="file" value="70" max="100"> </progress>
+                <progress id="file" value="50" max="100"> </progress>
                 <div class="skill-head">
                     <h5>
                         PHP
@@ -281,39 +284,46 @@
             </h3>
         </div>
         <div id="grid">
-            <div class="griditems project-one">
+
+          
+
+            <div class="griditems project-one " data-aos="fade-up"
+                data-aos-duration="1000">
                 <div class="content-overlay">
                     <h5>
-                        Fast Food Resturant
+                        E-commerce Website
                     </h5>
                     <p>
-                        I designed and developed a one-page website for a fast food restaurant, offering seamless online
-                        ordering and menu exploration.
+                        This e-commerce website, built with PHP and MySQL, offers a simple checkout and an easy-to-use order history for customers.
                     </p>
 
-                    <a target="_blank" href="https://fastfoodrestaurant-seven.vercel.app/">
-                        <button class="visitbtn">Visit</button>
-                    </a>
-
-                </div>
-            </div>
-            <div class="griditems project-two">
-                <div class="content-overlay">
-                    <h5>
-                        Sports Info
-                    </h5>
-                    <p>
-                        As the project lead, I developed Sports Info using cutting-edge tech to provide real-time
-                        updates, analysis, and sports insights.
-                    </p>
-
-                    <a target="_blank" href="https://sportsinfo-zaighamhaider7s-projects.vercel.app/" >
+                    <a target="_blank" href="http://azstore.free.nf/" >
                     <button class="visitbtn">Visit</button>
                     </a>
 
                 </div>
             </div>
-            <div class="griditems project-three">
+
+
+            <div class="griditems project-two " data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="content-overlay">
+                    <h5>
+                        Covid Testing System
+                    </h5>
+                    <p>
+                        This COVID testing system, built with PHP and MySQL, connects hospitals and patients for easy appointment booking and result tracking.
+                    </p>
+
+                    <a target="_blank" href="https://covidtestingsystem.free.nf/">
+                        <button class="visitbtn">Visit</button>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="griditems project-three" data-aos="fade-up"
+                data-aos-duration="2000">
                 <div class="content-overlay">
                     <h5>
                         AZ-FIT
@@ -328,6 +338,13 @@
 
                 </div>
             </div>
+        </div>
+        <div>
+          <a href="./project.html">
+            <button class="project-btn">
+                view more
+            </button>
+          </a>
         </div>
 
     </section>
@@ -344,7 +361,7 @@
             </h3>
         </div>
 
-        <div class="contact-outer">
+        <div class="contact-outer" data-aos="zoom-in">
             <div class="contact-detail">
                 <h2>
                     Contact
@@ -400,13 +417,18 @@
         </div>
     </section>
 
-    <!-- footer section start -->
-
+    <!-- footer section -->
     <footer>
-        <h2>
-            ZAIGHAM HAIDER PORTFOLIO
-        </h2>
+        <div>
+            <p>&copy; 2024 Alpha. All Rights Reserved.</p>
+            <p>
+                <a href="https://www.linkedin.com/in/zaigham-haider-62b60728b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B34mjCbzRRJSU%2B6OemySSBQ%3D%3D" style="color: white; margin: 0 10px;">LinkedIn</a>
+                <a href="https://github.com/zaighamhaider7" style="color: white; margin: 0 10px;">GitHub</a>
+                <a href="https://www.instagram.com/codewithalpha7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="color: white; margin: 0 10px;">Instagram</a>
+            </p>
+        </div>
     </footer>
+    
 
     <div id="cursor"></div>
 
@@ -505,6 +527,10 @@
             }
         );
     </script>
+
+<script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

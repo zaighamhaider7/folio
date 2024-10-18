@@ -427,7 +427,7 @@ li {
 }
 
 .service-cards {
-  width: 25rem !important;
+  width: 100% !important;
   height: 10em !important;
   transition: 0.6s !important;
   color: #fff !important;
@@ -444,17 +444,15 @@ li {
 
 .service-cards h3 {
   font-weight: 500 !important;
-  transition: 0.3s ease !important;
-  letter-spacing: 1.5px !important;
-  text-align: center !important;
-  font-size: 1.5vmax;
+  transition: 0.3s ease !important; 
+  letter-spacing: 1.5px !important; 
+  text-align: center !important; 
+  font-size: 1.5rem; 
+  margin: 0; 
+  font-style: oblique;
 }
 
-/* @media (max-width:780px){
-  .services-outer{
-    margin-top: 4em;
-  }
-} */
+
 @media(max-width:480px) {
   .service-cards {
     width: 17rem !important;
@@ -472,7 +470,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 1.5em;
   }
 
   .services-outer {
@@ -493,7 +491,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 2em;
 }
 
 .skill-heading {
@@ -610,13 +608,15 @@ progress::-webkit-progress-value {
 /* project section */
 
 #project {
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  gap: 1em;
+  padding-bottom: 50px;
+  /* background-color: red; */
 }
 
 #project h2 {
@@ -657,10 +657,28 @@ progress::-webkit-progress-value {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5em;
-    margin-bottom: 2em;
+    gap: 2em;
+    padding-bottom: 0px;
+    /* margin-bottom: 2em; */
   }
-
+  #project h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #fff;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  .project-overlay {
+    position: absolute;
+    top: 18%;
+    left: -10%;
+    font-size: 3.8rem;
+    letter-spacing: 4px;
+    z-index: -99;
+    color: #9999992c;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
   #grid {
     display: grid;
     grid-template-columns: repeat(2, 0fr);
@@ -692,7 +710,7 @@ progress::-webkit-progress-value {
   overflow: hidden;
   border-radius: 10px;
   display: flex;
-  background-image: url(./assets/foods.png);
+  background-image: url(./assets/e-commerce.png);
   background-size: cover;
   background-position: center;
   transition: 0.6s !important;
@@ -700,12 +718,12 @@ progress::-webkit-progress-value {
 }
 
 .griditems:nth-child(2) {
-  background-image: url(./assets/sports\ info.png);
-  background-position: center;
+  background-image: url(./assets/cts.png);
+  background-position: 0;
   background-size: cover;
 }
 .griditems:nth-child(3) {
-  background-image: url(./assets/Screenshot\ 2024-07-04\ 160603.png);
+  background-image: url(./assets/az.png);
   background-position: center;
   background-size: cover;
 }
@@ -716,7 +734,7 @@ progress::-webkit-progress-value {
 
 @media (max-width:500px) {
   .griditems {
-    height: 13em;
+    height: 13.5em;
     width: 18.5em;
     position: relative;
     border-radius: 10px;
@@ -762,7 +780,15 @@ progress::-webkit-progress-value {
   border-radius: 8px;
 }
 
-
+.project-btn {
+  height: 2.5em;
+  width: 8em;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #ffbd39;
+  border-radius: 8px;
+  font-weight: 600;
+}
 
 
 
