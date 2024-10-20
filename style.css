@@ -773,7 +773,7 @@ progress::-webkit-progress-value {
 }
 .visitbtn {
   height: 2em;
-  width: 8em;
+  width: 6em;
   background-color: transparent;
   color: #fff;
   border: 2px solid #ffbd39;
