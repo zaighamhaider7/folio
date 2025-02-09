@@ -66,22 +66,6 @@ gsap.from(".hero-img-div img", {
 })
 
 
-// loader gsap
-
-// gsap.from("#h1",{
-//     x:-500,
-//     duration:1,
-//     delay:0.5
-// })
-// gsap.from("#logoimg",{
-//     y:-500,
-//     duration:1,
-//     delay:1
-// })
-
-// setTimeout(() => {
-//     document.getElementById("logo").style.display = "none";
-// }, 3200);
 
 
 // arrow hide show
@@ -137,104 +121,6 @@ projects.forEach((project) => {
 
 
 
-
-
-// icons animation
-
-
-// gsap.from("#icons .social", {
-//     y: 50,
-//     opacity: 0,
-//     duration: 1,
-//     stagger: 0.5
-// })
-
-
-
-
-// about section animation 
-
-// gsap.from(".about-detail", {
-//     scale: 0,
-//     opacity: 0,
-//     duration: 1,
-//     delay: 0.5,
-//     scrollTrigger: {
-//         trigger: ".about-detail",
-//         scroller: "body",
-//         start: "top 150%",
-//         end: "top 30%",
-//         scrub: 2
-//     }
-// })
-// gsap.from(".about-img-div img", {
-//     scale: 0,
-//     opacity: 0,
-//     duration: 1,
-//     delay: 0.5,
-//     scrollTrigger: {
-//         trigger: ".about-img-div img",
-//         scroller: "body",
-//         start: "top 150%",
-//         end: "top 30%",
-//         scrub: 2,
-//     }
-// })
-
-
-// services section animation 
-
-// gsap.from(".services-outer .row .col", {
-//     scale: 0,
-//     opacity: 0,
-//     duration: 1,
-//     delay: 0.3,
-//     stagger: 0.2,
-//     scrollTrigger: {
-//         trigger: ".services-outer .row .col",
-//         scroller: "body",
-//         start: "top 150%",
-//         end: "top 30%",
-//         scrub: 2,
-//     }
-// })
-
-
-
-// skills section animation 
-
-// gsap.from(".skill-outer .skills", {
-//     scale: 0,
-//     opacity: 0,
-//     duration: 1,
-//     delay: 1,
-//     scrollTrigger: {
-//         trigger: ".skill-outer .skills progress",
-//         scroller: "body",
-//         start: "top 150%",
-//         end: "top 30%",
-//         scrub: 2,
-//     }
-// })
-
-
-// project section animation
-
-
-// gsap.from("#grid .griditems", {
-//     scale:0,
-//     opacity: 0,
-//     duration: 5,
-//     stagger: 0.5,
-//     scrollTrigger: {
-//         trigger: "#grid .griditems",
-//         scroller: "body",
-//         start: "top 180%",
-//         markers:true,
-//         // end: "top -5%",
-//         scrub: 2
-//     }
-// })
 
 
 

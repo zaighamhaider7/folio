@@ -6,7 +6,6 @@
 
 body {
   overflow-x: hidden !important;
-  /* background-color: #111 !important; */
 }
 
 html {
@@ -146,9 +145,10 @@ li {
   width: 100%;
   cursor: default;
   box-sizing: border-box;
-  /* padding: 0% 4.5%; */
   overflow-x: hidden !important;
+
 }
+
 
 .hero-detail h2 {
   font-size: 3rem;
@@ -378,7 +378,7 @@ li {
 /* services section start */
 
 #services {
-  height: 80vh;
+  height: 85vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -407,58 +407,49 @@ li {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.services-outer {
-  height: 100%;
+
+.service-card {
+  text-align: center;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 18px 8px #1e1e1e ;
+  padding-top: 10px;
+  padding-bottom: 5px
 }
 
-.col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.service-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.service-card h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.service-card p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+@media (max-width: 1115px) {
+#e-com{
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
 }
 
-.row {
-  align-content: center;
-  justify-content: center;
-}
-
-.service-cards {
-  width: 100% !important;
-  height: 10em !important;
-  transition: 0.6s !important;
-  color: #fff !important;
-  z-index: 9;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
-
-.service-cards:hover {
-  background-color: #ffbd39 !important;
-  cursor: help;
-}
-
-.service-cards h3 {
-  font-weight: 500 !important;
-  transition: 0.3s ease !important; 
-  letter-spacing: 1.5px !important; 
-  text-align: center !important; 
-  font-size: 1.5rem; 
-  margin: 0; 
-  font-style: oblique;
-}
-
-
-@media(max-width:480px) {
-  .service-cards {
-    width: 17rem !important;
-    height: 10rem !important;
-    margin: 0% auto;
-    z-index: 9;
+@media (max-width: 992px) {
+  .ser-row {
+      flex-direction: column;
+      align-items: center;
+  }
+  .col-md-4 {
+      width: 100% !important;
+  }
+  .service-card {
+      width: 100%;
+      margin-bottom: 20px;
   }
 }
 
@@ -472,25 +463,16 @@ li {
     align-items: center;
     gap: 1.5em;
   }
-
-  .services-outer {
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-}
+} 
 
 /* skills section start */
 #skills {
-  height: 80vh;
+  height: 85vh;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
   gap: 2em;
 }
 
@@ -504,7 +486,6 @@ li {
   font-size: 2.6rem;
   color: #fff;
   font-weight: bold;
-  /* margin-top: 2em; */
 }
 
 .skill-overlay {
@@ -519,75 +500,22 @@ li {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.skill-outer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  position: relative;
+.skill-item {
+  text-align: center;
+}
+.skill-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.skill-item h5 {
+  margin-top: 10px;
+  font-size: 1.2rem;
 }
 
-.skill-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0% 1.5%;
-  margin-bottom: 0%;
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-progress {
-  width: 25em;
-  height: 15px;
-  border-radius: 10px;
-}
-
-progress::-webkit-progress-bar {
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-progress::-webkit-progress-value {
-  background-color: #ffbd39;
-  border-radius: 10px;
-  transition: width 0.4s ease-in;
-}
-
-@media(max-width:1200px) {
-  progress {
-    width: 30em;
-    height: 15px;
-    border-radius: 10px;
-  }
-}
-
-@media(max-width:1050px) {
-  progress {
-    width: 20em;
-    height: 15px;
-    border-radius: 10px;
-  }
-}
 
 @media(max-width:760px) {
-  .skill-outer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: fit-content;
-    width: 100%;
-    margin-top: 4em;
-    margin-bottom: 4em;
-    position: relative;
-    gap: 2em;
-  }
 
   #skills {
     height: fit-content;
@@ -598,11 +526,6 @@ progress::-webkit-progress-value {
     align-items: center;
   }
 
-  progress {
-    width: 16em;
-    height: 15px;
-    border-radius: 10px;
-  }
 }
 
 /* project section */
@@ -616,14 +539,12 @@ progress::-webkit-progress-value {
   align-items: center;
   gap: 1em;
   padding-bottom: 50px;
-  /* background-color: red; */
 }
 
 #project h2 {
   text-align: center;
   font-size: 2.4rem;
   color: #fff;
-  /* margin-top: 2em; */
   font-weight: bold;
 }
 
@@ -631,7 +552,7 @@ progress::-webkit-progress-value {
   position: absolute;
   top: 30%;
   left: -10%;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   letter-spacing: 4px;
   z-index: -99;
   color: #9999992c;
@@ -659,7 +580,6 @@ progress::-webkit-progress-value {
     align-items: center;
     gap: 2em;
     padding-bottom: 0px;
-    /* margin-bottom: 2em; */
   }
   #project h2 {
     text-align: center;
@@ -687,7 +607,6 @@ progress::-webkit-progress-value {
     width: 100%;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden !important; */
   }
 }
 
@@ -743,13 +662,7 @@ progress::-webkit-progress-value {
   }
 }
 
-/* .gridimg{
-  border-radius: 10px;
-  transition: all 0.6s;
-}
-.griditems:hover .gridimg{
-  transform: scale(1.1);
-} */
+
 .content-overlay {
   height: 100%;
   width: 100%;
@@ -845,7 +758,6 @@ progress::-webkit-progress-value {
 .contact-detail {
   height: 30em;
   width: 25em;
-  /* border:1px solid #111111c1; */
   box-shadow: 0px 0px 30px 2px #11111197;
   border-top-left-radius: 100px;
   padding: 2% 4%;
@@ -874,7 +786,6 @@ progress::-webkit-progress-value {
   width: 2.5em;
   border-radius: 45px;
   border: 2px solid #ffbd39;
-  /* background-color: #ffbd39; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -891,7 +802,6 @@ progress::-webkit-progress-value {
 .contact-info {
   height: 30em;
   width: 25em;
-  /* border:2px solid white; */
   box-shadow: 0px 0px 30px 2px #11111197;
   border-bottom-right-radius: 100px;
   padding: 2% 4%;
@@ -963,28 +873,24 @@ progress::-webkit-progress-value {
   .contact-detail {
     height: 30em;
     width: 18em;
-    /* border:1px solid #111111c1; */
     box-shadow: 0px 0px 30px 2px #11111197;
     border-top-left-radius: 100px;
     padding: 4% 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-content: center; */
     gap: 1.6em;
   }
 
   .contact-info {
     height: 30em;
     width: 18em;
-    /* border:2px solid white; */
     box-shadow: 0px 0px 30px 2px #11111197;
     border-bottom-right-radius: 100px;
     padding: 4% 4%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
   }
 
   .contact-info form input {
@@ -1031,8 +937,8 @@ footer {
   bottom: 20%;
   right: 2%;
   z-index: 999 !important;
-  height: 4em;
-  width: 4em;
+  height: 3.5em;
+  width: 3.5em;
   background-color: #111;
   box-shadow: 0px 0px 30px 2px #11111197;
   border-radius: 45px;
@@ -1103,16 +1009,13 @@ footer {
   z-index: 9999;
   position: fixed;
   top: 0%;
-  /* font-size: 6.5px;
-  font-weight: 500;
-  color: #fff; */
   mix-blend-mode: difference;
 }
 
 /* scroll bar */
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   border-radius:45px;
 }
 ::-webkit-scrollbar-thumb {
@@ -1120,25 +1023,3 @@ footer {
   border-radius: 45px;
 }
 
-/* loader */
-#logo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  z-index: 999;
-  background-color: #111;
-}
-.logoinner{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden !important;
-  color: #fff;
-  gap: 1.5em;
-}

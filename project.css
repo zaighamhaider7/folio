@@ -6,7 +6,6 @@
   
   body {
     overflow-x: hidden !important;
-    /* background-color: #111 !important; */
   }
   
   html {
@@ -258,10 +257,6 @@
     background-image: url(./assets/sports\ info.png);
   }
 
-  .project-three {
-    background-image: url(./assets/az.png);
-  }
-  
   .project-four {
     background-image: url(./assets/cts.png);
     background-position: 0;
@@ -279,10 +274,7 @@
     background-image: url(./assets/zaighm\ archive.png);
   }
 
-  /* .griditems:hover {
-    top: -10px;
-  }
-   */
+
   @media (max-width:500px) {
     .griditems {
       height: 13.5em;
@@ -350,9 +342,6 @@
     z-index: 9999;
     position: fixed;
     top: 0%;
-    /* font-size: 6.5px;
-    font-weight: 500;
-    color: #fff; */
     mix-blend-mode: difference;
   }
   
@@ -373,7 +362,7 @@
   /* scroll bar */
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   border-radius:45px;
 }
 ::-webkit-scrollbar-thumb {
