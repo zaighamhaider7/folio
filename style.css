@@ -419,8 +419,8 @@ li {
 }
 
 .service-card img {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
   margin-bottom: 15px;
 }
@@ -550,9 +550,9 @@ li {
 
 .project-overlay {
   position: absolute;
-  top: 30%;
-  left: -10%;
-  font-size: 3.5rem;
+  top: 40%;
+  left: -7%;
+  font-size: 3.6rem;
   letter-spacing: 4px;
   z-index: -99;
   color: #9999992c;
@@ -583,16 +583,16 @@ li {
   }
   #project h2 {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: #fff;
     margin-bottom: 1em;
     font-weight: bold;
   }
   .project-overlay {
     position: absolute;
-    top: 18%;
-    left: -10%;
-    font-size: 3.8rem;
+    top: 25%;
+    left: -5%;
+    font-size: 3.2rem;
     letter-spacing: 4px;
     z-index: -99;
     color: #9999992c;
@@ -692,6 +692,7 @@ li {
   border: 2px solid #ffbd39;
   border-radius: 8px;
 }
+
 
 .project-btn {
   height: 2.5em;
