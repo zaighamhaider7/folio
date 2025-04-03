@@ -760,7 +760,7 @@ li {
 }
 
 .contact-detail {
-  height: 30em;
+  height: 32em;
   width: 25em;
   box-shadow: 0px 0px 30px 2px #11111197;
   border-top-left-radius: 100px;
@@ -804,7 +804,7 @@ li {
 }
 
 .contact-info {
-  height: 30em;
+  height: 32em;
   width: 25em;
   box-shadow: 0px 0px 30px 2px #11111197;
   border-bottom-right-radius: 100px;
@@ -819,7 +819,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  gap: 1.5em;
 }
 
 .contact-info form input {
@@ -900,6 +900,11 @@ li {
   .contact-info form input {
     height: 2.5em;
     width: 15em;
+  }
+  .contact-info form
+   input::placeholder,
+   textarea::placeholder {
+    font-size: 14px;  
   }
 
   .contact-info form textarea {
