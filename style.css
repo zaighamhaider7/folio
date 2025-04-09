@@ -334,6 +334,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1em;
   }
 
   .about-outer {
@@ -470,6 +471,50 @@ li {
   }
 } 
 
+/* hire me */
+
+#hire-me {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ background-image: linear-gradient(rgba(0, 0, 0, 0.548),rgba(0, 0, 0, 0.548)), url(./assets/hire-bg.jpg);
+ background-attachment: fixed;
+}
+.inner-hire{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  color: #fff !important;
+  z-index:2 ;
+}
+.inner-hire h2{
+  font-size: 4rem;
+}
+@media(max-width:430px){
+  .inner-hire h2{
+    font-size: 2.8rem;
+  }
+}
+.inner-hire h4{
+  font-weight: 400;
+}
+.hire-btn{
+  height: 3em;
+  width: 8em;
+  background-color: #ffbd39;
+  border: none;
+  color: #111;
+  font-weight: 600;
+}
+
+
 /* skills section start */
 #skills {
   height: 85vh;
@@ -536,14 +581,14 @@ li {
 /* project section */
 
 #project {
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
-  padding-bottom: 50px;
+  gap: 5em;
+  padding-bottom: 80px;
 }
 
 #project h2 {
@@ -584,7 +629,7 @@ li {
     justify-content: center;
     align-items: center;
     gap: 2em;
-    padding-bottom: 0px;
+    padding-bottom: 60px;
   }
   #project h2 {
     text-align: center;
@@ -847,11 +892,11 @@ li {
   background-color: transparent;
 }
 
-@media(max-width:1024px) {
+/* @media(max-width:1024px) {
   #contact {
-    margin-top: 4em;
+    margin-top: 0em;
   }
-}
+} */
 
 @media(max-width:875px) {
   #contact {
