@@ -273,14 +273,14 @@ li {
 
 .about-detail h2 {
   font-size: 3.5rem;
-  text-align: center;
+  text-align: left;
   margin-bottom: 0.5em;
 }
 
 .about-detail p {
   font-weight: 400;
   color: #ffffffab;
-  text-align: center;
+  text-align: left;
 }
 
 .about-img {
@@ -1078,4 +1078,5 @@ footer {
   background: #ffbd39; 
   border-radius: 45px;
 }
+
 
