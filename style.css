@@ -267,13 +267,13 @@ li {
 
 .about-detail {
   width: 30em;
-  text-align: left;
+  text-align: left !important;
   z-index: 11;
 }
 
 .about-detail h2 {
   font-size: 3.5rem;
-  text-align: left;
+  text-align: left !important;
   margin-bottom: 0.5em;
 }
 
@@ -302,7 +302,7 @@ li {
   }
 
   .about-detail h2 {
-    text-align: center;
+    text-align: center ;
     font-size: 2.5rem;
     margin-bottom: 0.5em;
   }
@@ -1078,6 +1078,7 @@ footer {
   background: #ffbd39; 
   border-radius: 45px;
 }
+
 
 
 
